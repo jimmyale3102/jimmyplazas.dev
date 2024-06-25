@@ -1,71 +1,48 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
-import { Box, Fab, Card, CardContent, Typography, Avatar, Container, Grid } from '@mui/material';
+import { Fab, Card, CardContent, Typography, Avatar, Container, Grid } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { db } from '../firebase.js';
-import { collection, getDocs } from 'firebase/firestore';
+import { useThemeContext } from './ThemeContext';
+import aboutData from '../data/about.json';
+import '../Home.css';
 
 function Home() {
   const navigate = useNavigate();
-  const [aboutData, setAboutData] = useState(null);
+  const { mode, toggleTheme } = useThemeContext();
 
   const handleContactClick = () => {
     navigate('/contact');
   };
 
-  useEffect(() => {
-    const fetchAboutData = async () => {
-      try {
-        const aboutCollectionRef = collection(db, 'About');
-        const querySnapshot = await getDocs(aboutCollectionRef);
-
-        querySnapshot.forEach((doc) => {
-          if (!aboutData) {
-            setAboutData(doc.data());
-          }
-        });
-      } catch (error) {
-        console.error('Error fetching data: ', error);
-      }
-    };
-
-    fetchAboutData();
-  }, []);
-
-  if (!aboutData) {
-    return (
-      <Container>
-        <Card style={{ marginTop: 20, padding: 20 }} sx={{ borderRadius: '12px' }}>
-          <CardContent>
-            <Typography variant="h5">Loading...</Typography>
-          </CardContent>
-        </Card>
-      </Container>
-    );
-  }
-
   return (
     <Container>
-      <Card style={{ marginTop: 20, padding: 20 }} sx={{ borderRadius: '12px' }}>
-        <Grid container style={{ justifyContent: 'center'}}>
+      <Card style={{ borderRadius: '12px', marginTop: '88px' }}>
+        <Grid container padding={'16px'} style={{ justifyContent: 'center', alignItems: 'center' }}>
 
-          <Grid item md={2} sm={2}>
+          <Grid item md={4} sm={5} xs={12} justifyContent={'center'}>
             <Avatar
               alt="Profile Picture"
               src={aboutData.profilePicture}
-              style={{ width: 160, height: 160}}
+              style={{ width: 200, height: 200 }}
             />
           </Grid>
 
-          <Grid item md={6} sm={6}>
+          <Grid item md={7} sm={6} xs={12}>
             <CardContent style={{ textAlign: 'left' }}>
-              <Typography variant="h5">{aboutData.name}</Typography>
+              <Typography variant="h5" fontWeight={'bold'}>
+                <span className="waving-hand">👋</span>
+                Hello, World!
+              </Typography>
+              <Typography mb={2} variant="h5" fontWeight={'bold'}>
+                I am <span style={{ color: mode === 'light' ? '#6200EE' : '#FFD700' }} >Jimmy</span>
+              </Typography>
               <Typography variant="body1">{aboutData.bio}</Typography>
             </CardContent>
           </Grid>
 
         </Grid>
       </Card>
+      
       <Fab
         color="primary"
         aria-label="contact"

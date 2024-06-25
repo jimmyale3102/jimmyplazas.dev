@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Typography, Container } from '@mui/material';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import WifiIcon from '@mui/icons-material/Wifi';
 import BatteryFullIcon from '@mui/icons-material/BatteryFull';
@@ -13,14 +13,21 @@ function Header() {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       style={{
-        backgroundColor: mode === 'light' ? '#6200EE' : '#333',
+        backgroundColor: mode === 'light' ? 'rgba(98, 0, 238, 0.8)' : 'rgba(51, 51, 51, 0.8)',
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)', // For Safari support
         transition: 'background-color 0.2s ease-in-out',
-      }}
-      sx={{ borderRadius: '8px' }}
-    >
-      <Toolbar>
+        borderRadius: '8px',
+        marginTop: '8px',
+        marginBottom: '16px',
+        maxWidth: '768px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+      }}>
+      <Toolbar
+      >
         <IconButton edge="start" color="inherit">
           <NotificationsIcon />
         </IconButton>

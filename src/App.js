@@ -20,11 +20,12 @@ function App() {
 
   return (
     <Router>
+        <Header />
       <Container
-        sx={{ maxWidth: 'lg', mt: 0.5 }}
+        maxWidth={'md'}
+        style={{ marginTop: '16px' }}
         className={`theme-transition ${isFadingIn ? 'fade-in' : ''}`}
       >
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
