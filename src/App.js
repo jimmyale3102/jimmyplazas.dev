@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import BottomNav from './components/BottomNav';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 import './App.css';
+import { Container } from '@mui/material';
 
 function App() {
+
+  const [isFadingIn, setIsFadingIn] = useState(false);
+
+  useEffect(() => {
+    setIsFadingIn(true);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Container
+        sx={{ maxWidth: 'lg', mt: 0.5 }}
+        className={`theme-transition ${isFadingIn ? 'fade-in' : ''}`}
+      >
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <BottomNav />
+      </Container>
+    </Router>
   );
 }
 
