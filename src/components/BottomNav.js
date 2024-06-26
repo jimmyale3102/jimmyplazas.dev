@@ -38,18 +38,24 @@ function BottomNav() {
     <BottomNavigation
       value={value}
       onChange={handleChange}
-      sx={{
+      style={{
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)', // For Safari support
         position: 'fixed',
         bottom: 0,
-        left: 0,
-        right: 0
+        right: 0,
+        left: '50%',
+        maxWidth: '768px',
+        transform: 'translateX(-50%)',
+        borderTopRightRadius: '8px',
+        borderTopLeftRadius: '8px',
       }}
-      >
-      <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-      <BottomNavigationAction label="About" icon={<InfoIcon />} />
-      <BottomNavigationAction label="Projects" icon={<FrameSource />} />
-      <BottomNavigationAction label="Skills" icon={<CodeIcon />} />
-      <BottomNavigationAction label="Contact" icon={<ContactMailIcon />} />
+    >
+      <BottomNavigationAction showLabel={true} label="Home" icon={<HomeIcon />} />
+      <BottomNavigationAction showLabel={true} label="About" icon={<InfoIcon />} />
+      <BottomNavigationAction showLabel={true} label="Projects" icon={<FrameSource />} />
+      <BottomNavigationAction showLabel={true} label="Skills" icon={<CodeIcon />} />
+      <BottomNavigationAction showLabel={true} label="Contact" icon={<ContactMailIcon />} />
     </BottomNavigation>
   );
 }
