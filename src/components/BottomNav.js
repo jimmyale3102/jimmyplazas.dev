@@ -41,15 +41,15 @@ function BottomNav() {
       value={value}
       onChange={handleChange}
       style={{
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        maxWidth: '768px',
+        margin: '0 auto',
         backgroundColor: mode === 'light' ? 'rgba(255, 255, 255, 0.8)' : 'rgba(18, 18, 18, 0.95)',
         backdropFilter: 'blur(10px)',
         WebkitBackdropFilter: 'blur(10px)', // For Safari support
-        position: 'fixed',
-        bottom: 0,
-        right: 0,
-        left: '50%',
-        maxWidth: '768px',
-        transform: 'translateX(-50%)',
         borderTopRightRadius: '8px',
         borderTopLeftRadius: '8px',
         boxShadow: '0px -4px 10px rgba(0, 0, 0, 0.1)',

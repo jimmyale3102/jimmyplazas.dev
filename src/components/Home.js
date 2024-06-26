@@ -34,7 +34,7 @@ function Home() {
                 Hello, World!
               </Typography>
               <Typography mb={2} variant="h5" fontWeight={'bold'}>
-                I am <span style={{ color: mode === 'light' ? '#6200EE' : '#FFD700' }} >Jimmy</span>
+                I am <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Jimmy</span>
               </Typography>
               <Typography variant="body1">{aboutData.bio}</Typography>
             </CardContent>

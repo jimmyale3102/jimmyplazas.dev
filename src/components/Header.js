@@ -10,7 +10,7 @@ import WbSunny from '@mui/icons-material/WbSunny';
 function Header() {
 
   const { mode, toggleTheme } = useThemeContext();
-
+  // Light color Hex: #0d47a1
   return (
     <AppBar
       position="fixed"
