@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { useThemeContext } from './ThemeContext';
 
 function BottomNav() {
-  const { mode, toggleTheme } = useThemeContext();
+  const { mode } = useThemeContext();
   const navigate = useNavigate();
   const [value, setValue] = React.useState(0);
 

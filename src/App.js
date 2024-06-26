@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Router>
-        <Header />
+      <Header />
       <Container
         maxWidth={'md'}
         style={{ marginTop: '16px' }}

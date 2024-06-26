@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, IconButton, Typography, Container } from '@mui/material';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import PersonIcon from '@mui/icons-material/Person';
 import WifiIcon from '@mui/icons-material/Wifi';
 import BatteryFullIcon from '@mui/icons-material/BatteryFull';
 import { useThemeContext } from './ThemeContext';
@@ -29,10 +29,10 @@ function Header() {
       <Toolbar
       >
         <IconButton edge="start" color="inherit">
-          <NotificationsIcon />
+          <PersonIcon />
         </IconButton>
-        <Typography variant="h6" style={{ flexGrow: 1 }}>
-          My Portfolio
+        <Typography variant="h6" style={{ flexGrow: 1,  }}>
+          Jimmy Plazas
         </Typography>
         <IconButton
           onClick={toggleTheme}

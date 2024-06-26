@@ -1,6 +1,5 @@
 import React from 'react';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
-import { Fab, Card, CardContent, Typography, Avatar, Container, Grid } from '@mui/material';
+import { Card, CardContent, Typography, Avatar, Container, Grid } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useThemeContext } from './ThemeContext';
 import aboutData from '../data/about.json';
@@ -9,10 +8,6 @@ import '../Home.css';
 function Home() {
   const navigate = useNavigate();
   const { mode, toggleTheme } = useThemeContext();
-
-  const handleContactClick = () => {
-    navigate('/contact');
-  };
 
   return (
     <Container>
@@ -201,15 +196,6 @@ function Home() {
 
         </Grid>
       </Card>
-      
-      <Fab
-        color="primary"
-        aria-label="contact"
-        onClick={handleContactClick}
-        style={{ position: 'fixed', bottom: 16, right: 16 }}
-        sx={{ borderRadius: '16px' }}>
-        <ContactMailIcon />
-      </Fab>
     </Container>
   );
 }
