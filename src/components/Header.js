@@ -15,7 +15,7 @@ function Header() {
     <AppBar
       position="fixed"
       style={{
-        backgroundColor: mode === 'light' ? 'rgba(98, 0, 238, 0.8)' : 'rgba(51, 51, 51, 0.8)',
+        backgroundColor: mode === 'light' ? 'rgba(13, 71, 161, 0.8)' : 'rgba(51, 51, 51, 0.8)',
         backdropFilter: 'blur(10px)',
         WebkitBackdropFilter: 'blur(10px)', // For Safari support
         transition: 'background-color 0.2s ease-in-out',

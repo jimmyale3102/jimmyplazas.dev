@@ -6,8 +6,10 @@ import FrameSource from '@mui/icons-material/Terminal';
 import CodeIcon from '@mui/icons-material/Code';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { useNavigate } from 'react-router-dom';
+import { useThemeContext } from './ThemeContext';
 
 function BottomNav() {
+  const { mode, toggleTheme } = useThemeContext();
   const navigate = useNavigate();
   const [value, setValue] = React.useState(0);
 
@@ -39,6 +41,7 @@ function BottomNav() {
       value={value}
       onChange={handleChange}
       style={{
+        backgroundColor: mode === 'light' ? 'rgba(255, 255, 255, 0.8)' : 'rgba(18, 18, 18, 0.95)',
         backdropFilter: 'blur(10px)',
         WebkitBackdropFilter: 'blur(10px)', // For Safari support
         position: 'fixed',
@@ -49,6 +52,8 @@ function BottomNav() {
         transform: 'translateX(-50%)',
         borderTopRightRadius: '8px',
         borderTopLeftRadius: '8px',
+        boxShadow: '0px -4px 10px rgba(0, 0, 0, 0.1)',
+        zIndex: 1000,
       }}
     >
       <BottomNavigationAction showLabel={true} label="Home" icon={<HomeIcon />} />

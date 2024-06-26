@@ -9,11 +9,16 @@ export const useThemeContext = () => useContext(ThemeContext);
 
 export const ThemeProviderComponent = ({ children }) => {
   const [mode, setMode] = useState('dark');
+  
+  const primaryColor = '#0288d1';
 
   const theme = useMemo(
     () =>
       createTheme({
         palette: {
+          primary: {
+            main: primaryColor,
+          },
           mode,
         }
       }),
