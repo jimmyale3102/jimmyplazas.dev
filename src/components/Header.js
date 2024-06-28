@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography, Container } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Typography } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import WifiIcon from '@mui/icons-material/Wifi';
 import BatteryFullIcon from '@mui/icons-material/BatteryFull';

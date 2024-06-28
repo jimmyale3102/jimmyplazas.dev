@@ -1,35 +1,33 @@
 import React from 'react';
 import { Card, CardContent, Typography, Avatar, Container, Grid, IconButton, useTheme, Box } from '@mui/material';
-import { ReactComponent as GitHubIcon } from '../github.svg';
-import { ReactComponent as LinkedInIcon } from '../linkedin.svg';
-import { ReactComponent as XIcon } from '../x.svg';
-import { ReactComponent as InstagramIcon } from '../instagram.svg';
+import { ReactComponent as GitHubIcon } from '../../github.svg';
+import { ReactComponent as LinkedInIcon } from '../../linkedin.svg';
+import { ReactComponent as XIcon } from '../../x.svg';
+import { ReactComponent as InstagramIcon } from '../../instagram.svg';
 import EmailIcon from '@mui/icons-material/Email';
-import { useNavigate } from 'react-router-dom';
-import { useThemeContext } from './ThemeContext';
-import aboutData from '../data/about.json';
-import '../Home.css';
+import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault } from '../ThemeContext';
+import '../../Home.css';
 
-function Home() {
-  const navigate = useNavigate();
-  const { mode, toggleTheme } = useThemeContext();
+function Intro() {
+  const { mode } = useThemeContext();
+
   const theme = useTheme();
   const iconColor = theme.palette.mode === 'light' ? '#0288d1' : '#ffffff';
 
   return (
     <Container>
-      <Card style={{ borderRadius: '12px', marginTop: '88px' }}>
-        <Grid container padding={'16px'} style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Card  style={{ borderRadius: BorderRadiusCard }}>
+        <Grid container spacing={3} padding={MarginDefault} style={{ justifyContent: 'center', alignItems: 'center' }}>
 
-          <Grid item md={4} sm={5} xs={12} justifyContent={'center'}>
+          <Grid item md={4} xs={12} justifyContent={'center'} marginInline={MarginDefault}>
             <Avatar
               alt="Profile Picture"
-              src={aboutData.profilePicture}
+              src='./profile.jpg'
               style={{ width: 200, height: 200 }}
             />
           </Grid>
 
-          <Grid item md={7} sm={6} xs={12}>
+          <Grid item md={7} xs={12}>
             <CardContent style={{ textAlign: 'left' }}>
               <Typography variant="h4" fontWeight={'bold'}>
                 <span className="waving-hand">👋</span>
@@ -38,39 +36,42 @@ function Home() {
               <Typography mb={2} variant="h4" fontWeight={'bold'}>
                 I am <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Jimmy</span>
               </Typography>
-              <Typography variant="body1">{aboutData.bio}</Typography>
+              <Typography variant="body1">
+                A passionate Android developer from Colombia 🇨🇴. Focused on crafting intuitive, user-friendly apps, I strive for excellence in every project.
+                Committed to continuous skill enhancement and staying updated with the latest technologies.
+              </Typography>
 
               <Box mt={2}>
                 <IconButton
-                  style={{ borderRadius: '8px' }}
+                  style={{ borderRadius: BorderRadiusMedium }}
                   href='https://github.com/jimmyale3102'
                   target='_blank'>
                   <GitHubIcon style={{ fill: iconColor }} />
                 </IconButton>
 
                 <IconButton
-                  style={{ marginLeft: '4px', borderRadius: '8px' }}
+                  style={{ marginLeft: '4px', borderRadius: BorderRadiusMedium }}
                   href='https://www.linkedin.com/in/jimmyplazas/'
                   target='_blank'>
                   <LinkedInIcon style={{ fill: iconColor }} />
                 </IconButton>
 
                 <IconButton
-                  style={{ marginLeft: '4px', borderRadius: '8px' }}
+                  style={{ marginLeft: '4px', borderRadius: BorderRadiusMedium }}
                   href='https://twitter.com/jimmyale3201'
                   target='_blank'>
                   <XIcon style={{ fill: iconColor }} />
                 </IconButton>
 
                 <IconButton
-                  style={{ marginLeft: '4px', borderRadius: '8px' }}
+                  style={{ marginLeft: '4px', borderRadius: BorderRadiusMedium }}
                   href='https://www.instagram.com/aleejo_loopez/'
                   target='_blank'>
                   <InstagramIcon style={{ fill: iconColor }} />
                 </IconButton>
 
                 <IconButton
-                  style={{ marginLeft: '4px', borderRadius: '8px' }}
+                  style={{ marginLeft: '4px', borderRadius: BorderRadiusMedium }}
                   href='./Contact/'>
                   <EmailIcon style={{ fill: iconColor }} />
                 </IconButton>
@@ -85,4 +86,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Intro;

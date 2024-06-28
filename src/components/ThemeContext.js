@@ -5,6 +5,11 @@ import '../App.css';
 
 const ThemeContext = createContext();
 
+export const BorderRadiusMedium = '8px';
+export const BorderRadiusCard = '12px';
+
+export const MarginDefault = '16px';
+
 export const useThemeContext = () => useContext(ThemeContext);
 
 export const ThemeProviderComponent = ({ children }) => {
