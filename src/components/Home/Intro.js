@@ -37,8 +37,10 @@ function Intro() {
                 I am <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Jimmy</span>
               </Typography>
               <Typography variant="body1">
-                A passionate Android developer from Colombia 🇨🇴. Focused on crafting intuitive, user-friendly apps, I strive for excellence in every project.
-                Committed to continuous skill enhancement and staying updated with the latest technologies.
+                A passionate Android developer from Colombia 🇨🇴. Focused on crafting intuitive, user-friendly apps.
+              </Typography>
+              <Typography variant="body1" marginTop={2}>
+              Committed to continuous skill enhancement and staying updated with the latest technologies.
               </Typography>
 
               <Box mt={2}>
