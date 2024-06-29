@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Box } from '@mui/material';
 import Statistics from './Statistics.js';
 import Intro from './Intro.js';
+import Projects from './Projects.js';
 
 function Home() {
   const yearsOfExperience = 3
@@ -14,6 +15,7 @@ function Home() {
         yearsOfExperience={yearsOfExperience}
         projectsWorkedOn={projectsWorkedOn}
       />
+      <Projects />
     </Container>
   );
 }
