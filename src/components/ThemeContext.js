@@ -5,6 +5,12 @@ import '../App.css';
 
 const ThemeContext = createContext();
 
+export const onLightIconColor = '#0288d1';
+export const onDarkIconColor = '#fff';
+export const LightHighlightColor = '#0d47a1';
+export const DarkHighlightColor = '#FFD700';
+export const BackgroundColorDark = '#121212';
+export const BackgroundColorLight = '#fff';
 export const BorderRadiusMedium = '8px';
 export const BorderRadiusCard = '12px';
 
