@@ -45,7 +45,7 @@ function BottomNav() {
         bottom: 0,
         left: 0,
         right: 0,
-        maxWidth: '768px',
+        maxWidth: '810px',
         margin: '0 auto',
         backgroundColor: mode === 'light' ? 'rgba(255, 255, 255, 0.8)' : 'rgba(18, 18, 18, 0.95)',
         backdropFilter: 'blur(10px)',

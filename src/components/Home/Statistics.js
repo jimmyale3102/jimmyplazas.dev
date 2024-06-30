@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, CardContent, Typography, Grid, Container } from '@mui/material';
+import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
 import { useThemeContext, BorderRadiusCard, MarginDefault } from '../ThemeContext';
 import CountUp from 'react-countup';
 
@@ -10,7 +10,7 @@ function Statistics() {
   const contributions = 10340;
 
   return (
-    <Container style={{ marginTop: MarginDefault }}>
+    <Box style={{ marginTop: MarginDefault }}>
       <Grid container spacing={3} >
         <Grid item xs={12} sm={4}>
           <Card style={{ borderRadius: BorderRadiusCard }}>
@@ -49,7 +49,7 @@ function Statistics() {
           </Card>
         </Grid>
       </Grid>
-    </Container>
+    </Box>
   );
 };
 

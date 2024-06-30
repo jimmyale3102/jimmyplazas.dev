@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTheme, Box, IconButton, Avatar, CardActionArea, Card, CardContent, CardMedia, Typography, Container, Grid } from '@mui/material';
-import { useThemeContext, MarginDefault, BorderRadiusMedium, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight, LightHighlightColor, DarkHighlightColor, onLightIconColor, onDarkIconColor } from '../ThemeContext';
+import { useTheme, Box, IconButton, Avatar, CardActionArea, Card, CardContent, Typography, Grid } from '@mui/material';
+import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight, LightHighlightColor, DarkHighlightColor, onLightIconColor, onDarkIconColor } from '../ThemeContext';
 import { ReactComponent as GitHubIcon } from '../../github.svg';
 import { ReactComponent as PlayStoreIcon } from '../../play_store.svg';
 import WebIcon from '@mui/icons-material/Web';
@@ -77,7 +77,9 @@ function ProjectItem({ iconSrc, title, description, languages, url, webUrl, gitH
                 {description}
               </Typography>
               <Typography variant="caption">
-                <span style={{ color: mode === 'light' ? LightHighlightColor : DarkHighlightColor }}>{languages}</span>
+                <span style={{ color: mode === 'light' ? LightHighlightColor : DarkHighlightColor }}>
+                  {languages}
+                </span>
               </Typography>
               <Box>
                 {gitHubButton}

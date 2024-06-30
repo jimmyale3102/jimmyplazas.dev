@@ -22,7 +22,7 @@ function Header() {
         borderRadius: '8px',
         marginTop: '8px',
         marginBottom: '16px',
-        maxWidth: '768px',
+        maxWidth: '810px',
         left: '50%',
         transform: 'translateX(-50%)',
       }}>

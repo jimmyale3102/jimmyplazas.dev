@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box } from '@mui/material';
+import { Container } from '@mui/material';
 import Statistics from './Statistics.js';
 import Intro from './Intro.js';
 import Projects from './Projects.js';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography, Avatar, Container, Grid, IconButton, useTheme, Box } from '@mui/material';
+import { Card, CardContent, Typography, Avatar, Grid, IconButton, useTheme, Box } from '@mui/material';
 import { ReactComponent as GitHubIcon } from '../../github.svg';
 import { ReactComponent as LinkedInIcon } from '../../linkedin.svg';
 import { ReactComponent as XIcon } from '../../x.svg';
@@ -15,7 +15,7 @@ function Intro() {
   const iconColor = theme.palette.mode === 'light' ? '#0288d1' : '#ffffff';
 
   return (
-    <Container>
+    <Box>
       <Card  style={{ borderRadius: BorderRadiusCard }}>
         <Grid container spacing={3} padding={MarginDefault} style={{ justifyContent: 'center', alignItems: 'center' }}>
 
@@ -84,7 +84,7 @@ function Intro() {
 
         </Grid>
       </Card>
-    </Container>
+    </Box>
   );
 }
 
