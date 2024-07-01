@@ -1,9 +1,9 @@
 import React from 'react';
 import { Card, CardContent, Typography, Avatar, Grid, IconButton, useTheme, Box } from '@mui/material';
-import { ReactComponent as GitHubIcon } from '../../github.svg';
-import { ReactComponent as LinkedInIcon } from '../../linkedin.svg';
-import { ReactComponent as XIcon } from '../../x.svg';
-import { ReactComponent as InstagramIcon } from '../../instagram.svg';
+import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
+import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
+import { ReactComponent as XIcon } from '../../assets/x.svg';
+import { ReactComponent as InstagramIcon } from '../../assets/instagram.svg';
 import EmailIcon from '@mui/icons-material/Email';
 import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault } from '../ThemeContext';
 import '../../Home.css';

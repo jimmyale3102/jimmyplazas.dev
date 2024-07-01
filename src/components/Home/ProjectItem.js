@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTheme, Box, IconButton, Avatar, CardActionArea, Card, CardContent, Typography, Grid } from '@mui/material';
 import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight, LightHighlightColor, DarkHighlightColor, onLightIconColor, onDarkIconColor } from '../ThemeContext';
-import { ReactComponent as GitHubIcon } from '../../github.svg';
-import { ReactComponent as PlayStoreIcon } from '../../play_store.svg';
+import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
+import { ReactComponent as PlayStoreIcon } from '../../assets/play_store.svg';
 import WebIcon from '@mui/icons-material/Web';
 
 function getButton(href, icon) {
