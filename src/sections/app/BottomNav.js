@@ -6,7 +6,7 @@ import FrameSource from '@mui/icons-material/Terminal';
 import CodeIcon from '@mui/icons-material/Code';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { useNavigate } from 'react-router-dom';
-import { useThemeContext } from './ThemeContext';
+import { useThemeContext } from '../../ThemeContext';
 
 function BottomNav() {
   const { mode } = useThemeContext();

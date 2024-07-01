@@ -5,8 +5,8 @@ import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
 import { ReactComponent as XIcon } from '../../assets/x.svg';
 import { ReactComponent as InstagramIcon } from '../../assets/instagram.svg';
 import EmailIcon from '@mui/icons-material/Email';
-import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault } from '../ThemeContext';
-import '../../Home.css';
+import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault } from '../../ThemeContext';
+import './Intro.css';
 
 function Intro() {
   const { mode } = useThemeContext();
@@ -22,7 +22,7 @@ function Intro() {
           <Grid item md={4} xs={12} justifyContent={'center'} marginInline={MarginDefault}>
             <Avatar
               alt="Profile Picture"
-              src='./profile.jpg'
+              src='./assets/profile.jpg'
               style={{ width: 200, height: 200 }}
             />
           </Grid>

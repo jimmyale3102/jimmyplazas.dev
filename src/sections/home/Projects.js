@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box } from '@mui/material';
-import { useThemeContext, MarginDefault, MarginBig } from '../ThemeContext';
-import ProjectItem from './ProjectItem';
+import { useThemeContext, MarginDefault, MarginBig } from '../../ThemeContext';
+import ProjectItem from '../../components/home/ProjectItem';
 
 function Projects() {
   const [projectsData, setProjects] = useState([]);

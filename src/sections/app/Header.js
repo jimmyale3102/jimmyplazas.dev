@@ -3,7 +3,7 @@ import { AppBar, Toolbar, IconButton, Typography } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import WifiIcon from '@mui/icons-material/Wifi';
 import BatteryFullIcon from '@mui/icons-material/BatteryFull';
-import { useThemeContext } from './ThemeContext';
+import { useThemeContext } from '../../ThemeContext';
 import DarkMode from '@mui/icons-material/DarkMode';
 import WbSunny from '@mui/icons-material/WbSunny';
 

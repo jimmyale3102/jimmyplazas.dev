@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
-import { useThemeContext, BorderRadiusCard, MarginDefault } from '../ThemeContext';
+import { useThemeContext, BorderRadiusCard, MarginDefault } from '../../ThemeContext';
 import CountUp from 'react-countup';
 
 function Statistics() {

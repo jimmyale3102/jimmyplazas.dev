@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import BottomNav from './components/BottomNav';
-import Home from './components/Home/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
+import Header from './sections/app/Header';
+import BottomNav from './sections/app//BottomNav';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Projects from './pages/projects/Projects';
+import Skills from './pages/skills/Skills';
+import Contact from './pages/contact/Contact';
 import './App.css';
 import { Container } from '@mui/material';
-import { MarginDefault } from './components/ThemeContext';
+import { MarginDefault } from './ThemeContext';
 
 function App() {
 

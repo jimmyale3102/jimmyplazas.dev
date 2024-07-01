@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from '@mui/material';
-import Statistics from './Statistics.js';
-import Intro from './Intro.js';
-import Projects from './Projects.js';
+import Intro from '../../sections/home/Intro.js';
+import Statistics from '../../sections/home/Statistics.js';
+import Projects from '../../sections/home/Projects.js';
 
 function Home() {
   const yearsOfExperience = 3
