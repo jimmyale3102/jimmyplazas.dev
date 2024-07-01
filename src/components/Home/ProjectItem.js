@@ -5,49 +5,30 @@ import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
 import { ReactComponent as PlayStoreIcon } from '../../assets/play_store.svg';
 import WebIcon from '@mui/icons-material/Web';
 
-function getButton(href, icon) {
-  return (
-    <IconButton
-      style={{ marginLeft: '4px', borderRadius: BorderRadiusMedium }}
-      href={href}
-      target='_blank'>
-      {icon}
-    </IconButton>
-  );
-}
 
-function ProjectItem({ iconSrc, title, description, languages, url, webUrl, gitHubUrl, playStoreUrl }) {
+function ProjectItem({ iconSrc, title, description, technologies, url, webUrl, gitHubUrl, playStoreUrl }) {
   const { mode } = useThemeContext();
   const theme = useTheme();
   const iconColor = theme.palette.mode === 'light' ? onLightIconColor : onDarkIconColor;
   const cardBackgroundColor = theme.palette.mode === 'light' ? BackgroundColorLight : BackgroundColorDark;
 
-  const webButton = (webUrl !== '') ? (
-    getButton(
-      webUrl,
-      <WebIcon style={{ fill: iconColor }} />
-    )
-  ) : null;
-
-  const gitHubButton = (gitHubUrl !== '') ? (
-    getButton(
-      playStoreUrl,
-      <GitHubIcon style={{ fill: iconColor }} />
-    )
-  ) : null;
-
-  const playStoreButton = (playStoreUrl !== '') ? (
-    getButton(
-      playStoreUrl,
-      <PlayStoreIcon style={{ fill: iconColor }} />
-    )
-  ) : null;
+  const renderIconButton = (href, IconComponent) => (
+    href ? (
+      <IconButton
+        component="div"
+        style={{ marginLeft: '4px', borderRadius: BorderRadiusMedium }}
+        onClick={() => window.open(href, '_blank')}
+      >
+        <IconComponent style={{ fill: iconColor }} />
+      </IconButton>
+    ) : null
+  );
 
   return (
     <Card style={{ backgroundColor: cardBackgroundColor, boxShadow: 'none', borderRadius: BorderRadiusCard }}>
       <CardActionArea href={url} target='_blank' style={{ backgroundColor: cardBackgroundColor }}>
         <CardContent>
-          <Grid container alignItems={'top'} style={{ display: 'flex' }}>
+          <Grid alignItems={'top'} style={{ display: 'flex' }}>
 
             <Grid item marginRight={2}
               style={{
@@ -60,8 +41,8 @@ function ProjectItem({ iconSrc, title, description, languages, url, webUrl, gitH
                 style={{
                   width: '100%',
                   height: '100%',
-                  maxHeight: '72px',
-                  maxWidth: '72px',
+                  maxHeight: '56px',
+                  maxWidth: '56px',
                   marginTop: '8px',
                   borderRadius: BorderRadiusMedium
                 }}
@@ -69,7 +50,6 @@ function ProjectItem({ iconSrc, title, description, languages, url, webUrl, gitH
             </Grid>
 
             <Grid item style={{ flex: 1 }}>
-
               <Typography variant="h6">
                 {title}
               </Typography>
@@ -78,15 +58,15 @@ function ProjectItem({ iconSrc, title, description, languages, url, webUrl, gitH
               </Typography>
               <Typography variant="caption">
                 <span style={{ color: mode === 'light' ? LightHighlightColor : DarkHighlightColor }}>
-                  {languages}
+                  {technologies}
                 </span>
               </Typography>
-              <Box>
-                {gitHubButton}
-                {playStoreButton}
-                {webButton}
-              </Box>
+            </Grid>
 
+            <Grid item alignSelf={'end'} style={{ display: 'flex' }}>
+              {renderIconButton(webUrl, WebIcon)}
+              {renderIconButton(gitHubUrl, GitHubIcon)}
+              {renderIconButton(playStoreUrl, PlayStoreIcon)}
             </Grid>
 
           </Grid>

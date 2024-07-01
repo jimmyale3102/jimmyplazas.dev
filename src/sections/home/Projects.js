@@ -18,7 +18,7 @@ function Projects() {
     <Box >
       <Typography
         variant="h4"
-        style={{ marginLeft: MarginDefault, marginTop: MarginBig }}>
+        style={{ marginLeft: MarginDefault, marginTop: MarginBig, marginBottom: MarginDefault }}>
         <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Projects</span>
       </Typography>
 
@@ -28,7 +28,7 @@ function Projects() {
           iconSrc={projectItem.iconSrc}
           title={projectItem.title}
           description={projectItem.description}
-          languages={projectItem.languages}
+          technologies={projectItem.technologies}
           url={projectItem.url}
           webUrl={projectItem.webUrl}
           gitHubUrl={projectItem.gitHubUrl}
