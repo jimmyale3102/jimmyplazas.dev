@@ -47,7 +47,7 @@ function BottomNav() {
         right: 0,
         maxWidth: '810px',
         margin: '0 auto',
-        backgroundColor: mode === 'light' ? 'rgba(255, 255, 255, 0.8)' : 'rgba(18, 18, 18, 0.95)',
+        backgroundColor: mode === 'light' ? 'rgba(255, 255, 255, 0.8)' : 'rgba(18, 18, 18, 0.8)',
         backdropFilter: 'blur(10px)',
         WebkitBackdropFilter: 'blur(10px)', // For Safari support
         borderTopRightRadius: '8px',
