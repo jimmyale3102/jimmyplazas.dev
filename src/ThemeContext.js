@@ -29,6 +29,9 @@ export const ThemeProviderComponent = ({ children }) => {
   const theme = useMemo(
     () =>
       createTheme({
+        typography: {
+          fontFamily: 'Raleway',
+        },
         palette: {
           primary: {
             main: primaryColor,
@@ -42,7 +45,6 @@ export const ThemeProviderComponent = ({ children }) => {
   const toggleTheme = () => {
     setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
   };
-
   return (
     <ThemeContext.Provider value={{ mode, toggleTheme }}>
       <ThemeProvider theme={theme}>
