@@ -37,7 +37,7 @@ function ProjectItem({ iconSrc, title, description, technologies, url, webUrl, g
             </Grid>
 
             <Grid item style={{ flex: 1 }}>
-              <Typography variant="h6">
+              <Typography variant="body1" fontWeight={'bold'}>
                 {title}
               </Typography>
               <Typography variant="body2" color="text.secondary">

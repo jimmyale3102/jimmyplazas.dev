@@ -4,6 +4,7 @@ import Intro from '../../sections/home/Intro.js';
 import Statistics from '../../sections/home/Statistics.js';
 import Projects from '../../sections/home/Projects.js';
 import { MarginDefault, MarginToolBar } from '../../ThemeContext.js';
+import Skills from '../../sections/home/Skills.js';
 
 function Home() {
   const yearsOfExperience = 3
@@ -17,6 +18,7 @@ function Home() {
         projectsWorkedOn={projectsWorkedOn}
       />
       <Projects />
+      <Skills />
     </Container>
   );
 }

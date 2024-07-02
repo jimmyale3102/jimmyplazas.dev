@@ -32,7 +32,7 @@ function Intro() {
           <Grid item style={{ flex: 1 }}>
             <CardContent style={{ textAlign: 'left' }}>
               <Typography variant="h5" fontWeight={'bold'}>
-                <span className="waving-hand"> 👋 </span>
+                <span className="waving-hand">👋 </span>
                 Hello, World!
               </Typography>
               <Typography mb={2} variant="h5" fontWeight={'bold'}>
