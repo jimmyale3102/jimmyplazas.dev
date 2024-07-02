@@ -5,7 +5,7 @@ import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
 import { ReactComponent as XIcon } from '../../assets/x.svg';
 import { ReactComponent as InstagramIcon } from '../../assets/instagram.svg';
 import EmailIcon from '@mui/icons-material/Email';
-import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault } from '../../ThemeContext';
+import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault, MarginSmall } from '../../ThemeContext';
 import './Intro.css';
 
 function Intro() {
@@ -17,23 +17,23 @@ function Intro() {
   return (
     <Box>
       <Card  style={{ borderRadius: BorderRadiusCard }}>
-        <Grid container spacing={3} padding={MarginDefault} style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <Grid container  padding={MarginSmall} style={{ display: 'flex' }}>
 
-          <Grid item md={4} xs={12} justifyContent={'center'} marginInline={MarginDefault}>
+          <Grid item style={{display: 'flex', marginLeft: MarginDefault, marginRight: MarginDefault, marginTop: MarginDefault}}>
             <Avatar
               alt="Profile Picture"
               src='./assets/profile.jpg'
-              style={{ width: 200, height: 200 }}
+              style={{ width: 180, height: 180 }}
             />
           </Grid>
 
-          <Grid item md={7} xs={12}>
+          <Grid item style={{flex: 1}}>
             <CardContent style={{ textAlign: 'left' }}>
-              <Typography variant="h4" fontWeight={'bold'}>
-                <span className="waving-hand">👋</span>
-                Hello, World!
+              <Typography variant="h5" fontWeight={'bold'}>
+                <span className="waving-hand"> 👋 </span>
+                 Hello, World!
               </Typography>
-              <Typography mb={2} variant="h4" fontWeight={'bold'}>
+              <Typography mb={2} variant="h5" fontWeight={'bold'}>
                 I am <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Jimmy</span>
               </Typography>
               <Typography variant="body1">
