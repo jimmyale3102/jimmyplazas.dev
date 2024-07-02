@@ -10,6 +10,7 @@ import Contact from './pages/contact/Contact';
 import './App.css';
 import { Container } from '@mui/material';
 import { MarginDefault } from './ThemeContext';
+import Footer from './sections/app/Footer';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
         <BottomNav />
       </Container>
     </Router>

@@ -14,9 +14,10 @@ export const BackgroundColorLight = '#fff';
 export const BorderRadiusMedium = '8px';
 export const BorderRadiusCard = '12px';
 
+export const MarginBig = '32px';
 export const MarginDefault = '16px';
 export const MarginSmall = '8px';
-export const MarginBig = '32px';
+export const MarginXSmall = '4px';
 
 export const useThemeContext = () => useContext(ThemeContext);
 

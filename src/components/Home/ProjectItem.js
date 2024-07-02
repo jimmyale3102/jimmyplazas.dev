@@ -4,25 +4,12 @@ import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorD
 import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
 import { ReactComponent as PlayStoreIcon } from '../../assets/play_store.svg';
 import WebIcon from '@mui/icons-material/Web';
-
+import IconButtonComponent from '../common/IconButton';
 
 function ProjectItem({ iconSrc, title, description, technologies, url, webUrl, gitHubUrl, playStoreUrl }) {
   const { mode } = useThemeContext();
   const theme = useTheme();
-  const iconColor = theme.palette.mode === 'light' ? onLightIconColor : onDarkIconColor;
   const cardBackgroundColor = theme.palette.mode === 'light' ? BackgroundColorLight : BackgroundColorDark;
-
-  const renderIconButton = (href, IconComponent) => (
-    href ? (
-      <IconButton
-        component="div"
-        style={{ marginLeft: '4px', borderRadius: BorderRadiusMedium }}
-        onClick={() => window.open(href, '_blank')}
-      >
-        <IconComponent style={{ fill: iconColor }} />
-      </IconButton>
-    ) : null
-  );
 
   return (
     <Card style={{ backgroundColor: cardBackgroundColor, boxShadow: 'none', borderRadius: BorderRadiusCard }}>
@@ -64,9 +51,9 @@ function ProjectItem({ iconSrc, title, description, technologies, url, webUrl, g
             </Grid>
 
             <Grid item alignSelf={'end'} style={{ display: 'flex' }}>
-              {renderIconButton(webUrl, WebIcon)}
-              {renderIconButton(gitHubUrl, GitHubIcon)}
-              {renderIconButton(playStoreUrl, PlayStoreIcon)}
+              {IconButtonComponent(webUrl, WebIcon)}
+              {IconButtonComponent(gitHubUrl, GitHubIcon)}
+              {IconButtonComponent(playStoreUrl, PlayStoreIcon)}
             </Grid>
 
           </Grid>
