@@ -18,6 +18,7 @@ function Projects() {
     <Box >
       <Typography
         variant="h4"
+        fontWeight={'bold'}
         style={{ marginLeft: MarginDefault, marginTop: MarginBig, marginBottom: MarginDefault }}>
         <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Projects</span>
       </Typography>

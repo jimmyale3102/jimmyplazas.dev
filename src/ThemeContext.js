@@ -11,9 +11,11 @@ export const LightHighlightColor = '#0d47a1';
 export const DarkHighlightColor = '#FFD700';
 export const BackgroundColorDark = '#121212';
 export const BackgroundColorLight = '#fff';
+
 export const BorderRadiusMedium = '8px';
 export const BorderRadiusCard = '12px';
 
+export const MarginToolBar = '88px';
 export const MarginBig = '32px';
 export const MarginDefault = '16px';
 export const MarginSmall = '8px';
