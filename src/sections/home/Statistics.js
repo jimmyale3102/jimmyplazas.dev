@@ -6,13 +6,13 @@ import CountUp from 'react-countup';
 function Statistics() {
   const { mode, toggleTheme } = useThemeContext();
   const yearsOfExperience = 4;
-  const projectsWorkedOn = 10;
+  const projectsWorkedOn = 9;
   const contributions = 10340;
   const textColor = mode === 'light' ? onLightTextColor : onDarkTextColor;
   return (
     <Box style={{ marginTop: MarginDefault }}>
       <Grid container spacing={3} >
-        <Grid item xs={4} sm={4}>
+        <Grid item xs={12} sm={4}>
           <Card style={{ borderRadius: BorderRadiusCard }}>
             <CardContent>
               <Typography variant="h4" fontWeight={'bold'}>
@@ -24,7 +24,7 @@ function Statistics() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4} sm={4}>
+        <Grid item xs={12} sm={4}>
           <Card style={{ borderRadius: BorderRadiusCard }}>
             <CardContent>
               <Typography variant="h4" fontWeight={'bold'}>
@@ -36,7 +36,7 @@ function Statistics() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4} sm={4}>
+        <Grid item xs={12} sm={4}>
           <Card style={{ borderRadius: BorderRadiusCard }}>
             <CardContent>
               <Typography variant="h4" fontWeight={'bold'}>
