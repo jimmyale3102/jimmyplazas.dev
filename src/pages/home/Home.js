@@ -3,6 +3,7 @@ import { Container } from '@mui/material';
 import Intro from '../../sections/home/Intro.js';
 import Statistics from '../../sections/home/Statistics.js';
 import Projects from '../../sections/home/Projects.js';
+import Experience from '../../sections/experience/Experience.js'
 import { MarginDefault, MarginToolBar } from '../../ThemeContext.js';
 import Skills from '../../sections/home/Skills.js';
 
@@ -19,6 +20,7 @@ function Home() {
       />
       <Projects />
       <Skills />
+      <Experience />
     </Container>
   );
 }
