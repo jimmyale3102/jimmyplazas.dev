@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '@mui/material';
+import { Container, Divider } from '@mui/material';
 import Intro from '../../sections/home/Intro.js';
 import Statistics from '../../sections/home/Statistics.js';
 import Projects from '../../sections/home/Projects.js';
@@ -12,14 +12,17 @@ function Home() {
   const projectsWorkedOn = 5
 
   return (
-    <Container style={{ marginTop: MarginToolBar, marginBottom: MarginDefault}}>
-      <Intro/>
+    <Container style={{ marginTop: MarginToolBar, marginBottom: MarginDefault }}>
+      <Intro />
       <Statistics
         yearsOfExperience={yearsOfExperience}
         projectsWorkedOn={projectsWorkedOn}
       />
+      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <Projects />
+      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <Skills />
+      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <Experience />
     </Container>
   );
