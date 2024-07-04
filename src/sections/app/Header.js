@@ -31,7 +31,7 @@ function Header() {
         <IconButton edge="start" color="inherit">
           <PersonIcon />
         </IconButton>
-        <Typography variant="subtitle1" fontWeight={'bold'} style={{ flexGrow: 1,  }}>
+        <Typography variant="subtitle1" fontWeight={'bold'} style={{ flexGrow: 1 }}>
           Jimmy Plazas
         </Typography>
         <IconButton

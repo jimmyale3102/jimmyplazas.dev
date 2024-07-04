@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box, Stack } from '@mui/material';
-import { useThemeContext, MarginDefault, MarginXSmall, MarginSmall, BorderRadiusCard, onLightBorderColor, onDarkBorderColor } from '../../ThemeContext';
+import { useThemeContext, MarginDefault, MarginXSmall, MarginSmall, BorderRadiusCard, onLightBorderColor, onDarkBorderColor, onLightTextColor, onDarkTextColor } from '../../ThemeContext';
 
 function Skills() {
   const [skillsData, setSkills] = useState([]);
@@ -20,7 +20,7 @@ function Skills() {
         variant="h4"
         fontWeight={'bold'}
         style={{ marginLeft: MarginDefault, marginBottom: MarginDefault }}>
-        <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Skills</span>
+        <span style={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor }} >Skills</span>
       </Typography>
 
       <Box display={'flex'} flexWrap={'wrap'}>

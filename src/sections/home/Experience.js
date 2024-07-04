@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box } from '@mui/material';
-import { useThemeContext, MarginDefault } from '../../ThemeContext';
+import { useThemeContext, MarginDefault, onDarkTextColor, onLightTextColor } from '../../ThemeContext';
 import ProjectItem from '../../components/home/ProjectItem';
 
 function Experience() {
@@ -20,7 +20,7 @@ function Experience() {
         variant="h4"
         fontWeight={'bold'}
         style={{ marginLeft: MarginDefault, marginBottom: MarginDefault }}>
-        <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Experience</span>
+        <span style={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor }} >Experience</span>
       </Typography>
 
       {expereinceData.map((experienceItem, index) => (

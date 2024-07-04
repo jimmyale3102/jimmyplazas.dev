@@ -2,7 +2,7 @@
   {
     "iconSrc": "./assets/apps/triqui.webp",
     "title": "Tic Tac Toe - Triqui",
-    "description": "A simple yet entertaining game allows users either to play single mode game or to create a game, play with friends, and view the results after each match.",
+    "description": "A simple yet entertaining game allows users either to play single mode game or multiplayer.",
     "technologies": "Kotlin | Jetpack Compose | Firebase",
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.triqui",
     "webUrl": "",
@@ -12,7 +12,7 @@
   {
     "iconSrc": "./assets/apps/excuseme.webp",
     "title": "Excuse Me",
-    "description": "It's your ultimate companion for crafting clever excuses on the go. Whether you're running late, need to dodge an awkward conversation, or simply want to add humor to your interactions.",
+    "description": "It's your ultimate companion for crafting clever excuses on the go.",
     "technologies": "Kotlin | Jetpack Compose | API",
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme",
     "webUrl": "",
@@ -22,7 +22,7 @@
   {
     "iconSrc": "./assets/apps/colombia_holidays.webp",
     "title": "Festivos Colombia 2024",
-    "description": "Application where you will find all the holidays in Colombia, including basic information on each of the holidays.",
+    "description": "Application where you will find all the holidays in Colombia.",
     "technologies": "Kotlin | Android views | API",
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays",
     "webUrl": "",

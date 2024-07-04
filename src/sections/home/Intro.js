@@ -2,14 +2,14 @@ import React from 'react';
 import { Card, CardContent, Typography, Avatar, Grid, Button, useTheme, Box, Stack } from '@mui/material';
 import { ReactComponent as ResumeIcon } from '../../assets/resume.svg';
 import { LocationOn, School, Language, Home } from '@mui/icons-material';
-import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault, MarginSmall, MarginXSmall, onLightBorderColor, onDarkBorderColor } from '../../ThemeContext';
+import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault, MarginSmall, MarginXSmall, onLightBorderColor, onDarkBorderColor, onLightIconColor, onDarkIconColor, DarkHighlightColor, LightHighlightColor, onDarkTextColor, onLightTextColor } from '../../ThemeContext';
 import './Intro.css';
 
 function Intro() {
   const { mode } = useThemeContext();
   const theme = useTheme();
   const borderColor = mode === 'light' ? onLightBorderColor : onDarkBorderColor;
-  const iconColor = theme.palette.mode === 'light' ? '#0288d1' : '#ffffff';
+  const iconColor = theme.palette.mode === 'light' ? onLightIconColor : onDarkIconColor;
 
   return (
     <Box>
@@ -59,7 +59,7 @@ function Intro() {
                 Hello, World!
               </Typography>
               <Typography mb={1} variant="h5" fontWeight={'bold'}>
-                I am <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Jimmy</span>
+                I am <span style={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor }} >Jimmy</span>
               </Typography>
               <Typography variant="body1">
                 A passionate Android developer from Colombia 🇨🇴. Focused on crafting intuitive, user-friendly apps.
@@ -73,6 +73,7 @@ function Intro() {
                 <Button
                   variant="outlined"
                   style={{
+                    fontWeight: 'bold',
                     marginRight: '8px',
                     borderRadius: BorderRadiusMedium,
                     color: iconColor,

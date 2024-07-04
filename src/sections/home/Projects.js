@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box } from '@mui/material';
-import { useThemeContext, MarginDefault } from '../../ThemeContext';
+import { useThemeContext, MarginDefault, onLightTextColor, onDarkTextColor } from '../../ThemeContext';
 import ProjectItem from '../../components/home/ProjectItem';
 
 function Projects() {
@@ -20,7 +20,7 @@ function Projects() {
         variant="h4"
         fontWeight={'bold'}
         style={{ marginLeft: MarginDefault, marginBottom: MarginDefault }}>
-        <span style={{ color: mode === 'light' ? '#0d47a1' : '#FFD700' }} >Projects</span>
+        <span style={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor }} >Projects</span>
       </Typography>
 
       {projectsData.map((projectItem, index) => (
