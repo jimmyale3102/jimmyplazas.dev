@@ -1,6 +1,6 @@
 [
   {
-    "iconSrc": "./assets/apps/triqui.webp",
+    "iconSrc": "./assets/triqui.webp",
     "title": "Tic Tac Toe - Triqui",
     "description": "A simple yet entertaining game allows users either to play single mode game or to create a game, play with friends, and view the results after each match.",
     "technologies": "Kotlin | Jetpack Compose | Firebase",
@@ -10,7 +10,7 @@
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
   },
   {
-    "iconSrc": "./assets/apps/excuseme.webp",
+    "iconSrc": "./assets/excuseme.webp",
     "title": "Excuse Me",
     "description": "It's your ultimate companion for crafting clever excuses on the go. Whether you're running late, need to dodge an awkward conversation, or simply want to add humor to your interactions.",
     "technologies": "Kotlin | Jetpack Compose | API",
@@ -20,7 +20,7 @@
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme"
   },
   {
-    "iconSrc": "./assets/apps/colombia_holidays.webp",
+    "iconSrc": "./assets/colombia_holidays.webp",
     "title": "Festivos Colombia 2024",
     "description": "Application where you will find all the holidays in Colombia, including basic information on each of the holidays.",
     "technologies": "Kotlin | Android views | API",
@@ -30,7 +30,7 @@
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays"
   },
   {
-    "iconSrc": "./assets/apps/world_holidays.webp",
+    "iconSrc": "./assets/world_holidays.webp",
     "title": "World Holidays",
     "description": "Application where you will be able to find out all holidays over 110 countries.",
     "technologies": "Kotlin | Jetpack Compose | API",
@@ -40,7 +40,7 @@
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays"
   },
   {
-    "iconSrc": "./assets/apps/boyaca_dev.svg",
+    "iconSrc": "./assets/boyaca_dev.svg",
     "title": "Boyacá Dev",
     "description": "First software development conference in Boyacá, Colombia.",
     "technologies": "Community",
