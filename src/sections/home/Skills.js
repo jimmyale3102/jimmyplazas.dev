@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box, Stack } from '@mui/material';
-import { useThemeContext, MarginDefault, MarginBig, MarginXSmall, MarginSmall, BorderRadiusMedium, onLightIconColor, onDarkIconColor, BorderRadiusCard } from '../../ThemeContext';
+import { useThemeContext, MarginDefault, MarginBig, MarginXSmall, MarginSmall, BorderRadiusCard, onLightBorderColor, onDarkBorderColor } from '../../ThemeContext';
 
 function Skills() {
   const [skillsData, setSkills] = useState([]);
   const { mode } = useThemeContext();
-  const borderColor = mode === 'light' ? onLightIconColor : onDarkIconColor;
+  const borderColor = mode === 'light' ? onLightBorderColor : onDarkBorderColor;
 
   useEffect(() => {
     fetch('./skills.json')

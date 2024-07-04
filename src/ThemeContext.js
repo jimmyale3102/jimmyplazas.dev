@@ -7,6 +7,8 @@ const ThemeContext = createContext();
 
 export const onLightIconColor = '#0288d1';
 export const onDarkIconColor = '#fff';
+export const onLightBorderColor = onLightIconColor;
+export const onDarkBorderColor = 'rgba(255, 255, 255, 0.3)';
 export const LightHighlightColor = '#0d47a1';
 export const DarkHighlightColor = '#FFD700';
 export const BackgroundColorDark = '#121212';
