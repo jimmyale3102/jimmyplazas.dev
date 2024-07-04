@@ -24,7 +24,7 @@ function App() {
     <Router>
       <Header />
       <Container
-        maxWidth={'md'}
+        style={{maxWidth: '780px'}}
         className={`theme-transition ${isFadingIn ? 'fade-in' : ''}`}
       >
         <Routes>
@@ -35,7 +35,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-        <BottomNav />
+        
       </Container>
     </Router>
   );

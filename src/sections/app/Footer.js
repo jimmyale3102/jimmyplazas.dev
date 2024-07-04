@@ -19,7 +19,6 @@ function Footer() {
         p: MarginDefault,
         maxWidth: '810px',
         margin: '0 auto',
-        marginBottom: '56px',
         borderTop: '1px solid grey'
       }}>
       <Stack direction={'column'}>
