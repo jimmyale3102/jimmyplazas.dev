@@ -6,7 +6,7 @@ import { ReactComponent as PlayStoreIcon } from '../../assets/play_store.svg';
 import WebIcon from '@mui/icons-material/Web';
 import IconButtonComponent from '../common/IconButton';
 
-function ProjectItem({ iconSrc, title, description, technologies, url, webUrl, gitHubUrl, playStoreUrl }) {
+function ProjectItem({ iconSrc, title, time, description, technologies, url, webUrl, gitHubUrl, playStoreUrl }) {
   const { mode } = useThemeContext();
   const theme = useTheme();
   const cardBackgroundColor = theme.palette.mode === 'light' ? BackgroundColorLight : BackgroundColorDark;
@@ -37,9 +37,19 @@ function ProjectItem({ iconSrc, title, description, technologies, url, webUrl, g
             </Grid>
 
             <Grid item style={{ flex: 1 }}>
-              <Typography variant="body1" fontWeight={'bold'}>
-                {title}
-              </Typography>
+              <Grid container direction={'row'} display={{display: '-ms-inline-flexbox'}}>
+                <Grid itemc style={{display: 'flex'}}>
+                  <Typography variant="body1" fontWeight={'bold'}>
+                    {title}
+                  </Typography>
+                </Grid>
+                <Grid item style={{flex: 1}}>
+                  <Typography variant="body2" color="text.secondary" style={{textAlign: 'end'}}>
+                    {time}
+                  </Typography>
+                </Grid>
+              </Grid>
+
               <Typography variant="body2" color="text.secondary">
                 {description}
               </Typography>

@@ -28,6 +28,7 @@ function Experience() {
           key={index}
           iconSrc={experienceItem.iconSrc}
           title={experienceItem.title}
+          time={experienceItem.time}
           description={experienceItem.description}
           technologies={experienceItem.technologies}
           url={experienceItem.url}
