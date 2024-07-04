@@ -30,7 +30,7 @@ function ProjectItem({ iconSrc, title, time, description, technologies, url, web
                   height: '100%',
                   maxHeight: '56px',
                   maxWidth: '56px',
-                  marginTop: '8px',
+                  marginTop: '2px',
                   borderRadius: BorderRadiusMedium
                 }}
               />
@@ -38,7 +38,7 @@ function ProjectItem({ iconSrc, title, time, description, technologies, url, web
 
             <Grid item style={{ flex: 1 }}>
               <Grid container direction={'row'} display={{display: '-ms-inline-flexbox'}}>
-                <Grid itemc style={{display: 'flex'}}>
+                <Grid item style={{display: 'flex'}}>
                   <Typography variant="body1" fontWeight={'bold'}>
                     {title}
                   </Typography>

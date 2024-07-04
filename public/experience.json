@@ -1,5 +1,16 @@
 [
   {
+    "iconSrc": "./assets/default.png",
+    "title": "Independent Developer",
+    "time": "Apr 2023 - Present",
+    "description": "Android Developer, Web Developer",
+    "technologies": "",
+    "url": "https://github.com/jimmyale3102/",
+    "webUrl": "",
+    "gitHubUrl": "",
+    "playStoreUrl": ""
+  },
+  {
     "iconSrc": "./assets/companies/globant_logo.jpeg",
     "title": "Globant",
     "time": "May 2022 - Mar 2023",
