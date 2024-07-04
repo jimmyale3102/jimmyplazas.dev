@@ -3,7 +3,7 @@ import { Typography, Box } from '@mui/material';
 import { useThemeContext, MarginDefault } from '../../ThemeContext';
 import ProjectItem from '../../components/home/ProjectItem';
 
-function Projects() {
+function Experience() {
   const [expereinceData, setExperience] = useState([]);
   const { mode } = useThemeContext();
 
@@ -41,4 +41,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Experience;

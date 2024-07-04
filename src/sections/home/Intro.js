@@ -1,13 +1,8 @@
 import React from 'react';
 import { Card, CardContent, Typography, Avatar, Grid, Button, useTheme, Box, Stack } from '@mui/material';
-import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
-import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
-import { ReactComponent as XIcon } from '../../assets/x.svg';
-import { ReactComponent as InstagramIcon } from '../../assets/instagram.svg';
 import { ReactComponent as ResumeIcon } from '../../assets/resume.svg';
-import { Email, LocationOn, School, Language, Home } from '@mui/icons-material';
+import { LocationOn, School, Language, Home } from '@mui/icons-material';
 import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault, MarginSmall, MarginXSmall, onLightBorderColor, onDarkBorderColor } from '../../ThemeContext';
-import IconButtonComponent from '../../components/common/IconButton';
 import './Intro.css';
 
 function Intro() {
@@ -19,10 +14,10 @@ function Intro() {
   return (
     <Box>
       <Card style={{ borderRadius: BorderRadiusCard }}>
-        <Grid container padding={MarginSmall} style={{ display: 'flex' }}>
+        <Grid container padding={MarginDefault} style={{ display: 'flex' }}>
 
-          <Grid item style={{ display: 'flex', marginLeft: MarginDefault, marginRight: MarginDefault}}>
-            <Stack direction={'column'} spacing={1}>
+          <Grid item style={{ display: 'flex', marginLeft: MarginDefault, marginRight: MarginDefault }}>
+            <Stack direction={'column'} spacing={2}>
               <Avatar
                 alt="Profile Picture"
                 src='./assets/profile.jpg'
@@ -75,28 +70,19 @@ function Intro() {
 
               <Grid container mt={2} style={{ alignItems: 'center' }}>
 
-                <Grid item xs={12} sm={12} md={3}>
-                  <Button
-                    variant="outlined"
-                    style={{
-                      marginRight: '8px',
-                      borderRadius: BorderRadiusMedium,
-                      color: iconColor,
-                      border: `1px solid ${borderColor}`
-                    }}
-                    href='./JimmyPlazas_CV.pdf'
-                    target='_blank'>
-                    <ResumeIcon style={{ width: '18px', height: '18px', marginRight: MarginXSmall, fill: iconColor }} />
-                    Resume
-                  </Button>
-                </Grid>
-                <Grid item xs={12} sm={12} md={8}>
-                  {IconButtonComponent('https://github.com/jimmyale3102', GitHubIcon)}
-                  {IconButtonComponent('https://www.linkedin.com/in/jimmyplazas/', LinkedInIcon)}
-                  {IconButtonComponent('https://twitter.com/jimmyale3201', XIcon)}
-                  {IconButtonComponent('https://www.instagram.com/aleejo_loopez/', InstagramIcon)}
-                  {IconButtonComponent('./Contact/', Email)}
-                </Grid>
+                <Button
+                  variant="outlined"
+                  style={{
+                    marginRight: '8px',
+                    borderRadius: BorderRadiusMedium,
+                    color: iconColor,
+                    border: `1px solid ${borderColor}`
+                  }}
+                  href='./JimmyPlazas_CV.pdf'
+                  target='_blank'>
+                  <ResumeIcon style={{ width: '18px', height: '18px', marginRight: MarginXSmall, fill: iconColor }} />
+                  Resume
+                </Button>
               </Grid>
 
             </CardContent>
