@@ -1,51 +1,31 @@
 [
   {
-    "iconSrc": "./assets/triqui.webp",
-    "title": "Tic Tac Toe - Triqui",
-    "description": "A simple yet entertaining game allows users either to play single mode game or to create a game, play with friends, and view the results after each match.",
-    "technologies": "Kotlin | Jetpack Compose | Firebase",
-    "url": "https://play.google.com/store/apps/details?id=dev.alejo.triqui",
+    "iconSrc": "./assets/companies/globant_logo.jpeg",
+    "title": "Globant",
+    "description": "Android Mobile Developer Jr Adv",
+    "technologies": "",
+    "url": "https://www.globant.com/",
     "webUrl": "",
-    "gitHubUrl": "https://github.com/jimmyale3102/tictactoe_triqui",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
+    "gitHubUrl": "",
+    "playStoreUrl": ""
   },
   {
-    "iconSrc": "./assets/excuseme.webp",
-    "title": "Excuse Me",
-    "description": "It's your ultimate companion for crafting clever excuses on the go. Whether you're running late, need to dodge an awkward conversation, or simply want to add humor to your interactions.",
-    "technologies": "Kotlin | Jetpack Compose | API",
-    "url": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme",
+    "iconSrc": "./assets/companies/fletx_logo.jpeg",
+    "title": "FletX",
+    "description": "Androidn Developer",
+    "technologies": "",
+    "url": "https://fletx.co/",
     "webUrl": "",
-    "gitHubUrl": "https://github.com/jimmyale3102/excuse-me",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme"
+    "gitHubUrl": "",
+    "playStoreUrl": ""
   },
   {
-    "iconSrc": "./assets/colombia_holidays.webp",
-    "title": "Festivos Colombia 2024",
-    "description": "Application where you will find all the holidays in Colombia, including basic information on each of the holidays.",
-    "technologies": "Kotlin | Android views | API",
-    "url": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays",
+    "iconSrc": "./assets/companies/bpsmart_logo.jpeg",
+    "title": "BPSmart",
+    "description": "Android Mobile Developer",
+    "technologies": "",
+    "url": "https://www.bpsmart.ai/",
     "webUrl": "",
-    "gitHubUrl": "https://github.com/jimmyale3102/CO-Holidays",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays"
-  },
-  {
-    "iconSrc": "./assets/world_holidays.webp",
-    "title": "World Holidays",
-    "description": "Application where you will be able to find out all holidays over 110 countries.",
-    "technologies": "Kotlin | Jetpack Compose | API",
-    "url": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays",
-    "webUrl": "",
-    "gitHubUrl": "https://github.com/andiosteam-dev/AND_world_holidays",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays"
-  },
-  {
-    "iconSrc": "./assets/boyaca_dev.svg",
-    "title": "Boyacá Dev",
-    "description": "First software development conference in Boyacá, Colombia.",
-    "technologies": "Community",
-    "url": "https://boyaca-dev.org/",
-    "webUrl": "https://boyaca-dev.org/",
     "gitHubUrl": "",
     "playStoreUrl": ""
   }
