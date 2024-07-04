@@ -2,6 +2,7 @@
   {
     "iconSrc": "./assets/companies/globant_logo.jpeg",
     "title": "Globant",
+    "time": "May 2022 - Mar 2023",
     "description": "Android Mobile Developer Jr Adv",
     "technologies": "",
     "url": "https://www.globant.com/",
@@ -12,6 +13,7 @@
   {
     "iconSrc": "./assets/companies/fletx_logo.jpeg",
     "title": "FletX",
+    "time": "Nov 2021 - May 2022",
     "description": "Androidn Developer",
     "technologies": "",
     "url": "https://fletx.co/",
@@ -22,6 +24,7 @@
   {
     "iconSrc": "./assets/companies/bpsmart_logo.jpeg",
     "title": "BPSmart",
+    "time": "Mar 2020 - Nov 2021",
     "description": "Android Mobile Developer",
     "technologies": "",
     "url": "https://www.bpsmart.ai/",

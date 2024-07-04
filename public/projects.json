@@ -2,6 +2,7 @@
   {
     "iconSrc": "./assets/apps/triqui.webp",
     "title": "Tic Tac Toe - Triqui",
+    "time": "",
     "description": "A simple yet entertaining game allows users either to play single mode game or multiplayer.",
     "technologies": "Kotlin | Jetpack Compose | Firebase",
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.triqui",
@@ -12,6 +13,7 @@
   {
     "iconSrc": "./assets/apps/excuseme.webp",
     "title": "Excuse Me",
+    "time": "",
     "description": "It's your ultimate companion for crafting clever excuses on the go.",
     "technologies": "Kotlin | Jetpack Compose | API",
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme",
@@ -22,6 +24,7 @@
   {
     "iconSrc": "./assets/apps/colombia_holidays.webp",
     "title": "Festivos Colombia 2024",
+    "time": "",
     "description": "Application where you will find all the holidays in Colombia.",
     "technologies": "Kotlin | Android views | API",
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays",
@@ -32,6 +35,7 @@
   {
     "iconSrc": "./assets/apps/world_holidays.webp",
     "title": "World Holidays",
+    "time": "",
     "description": "Application where you will be able to find out all holidays over 110 countries.",
     "technologies": "Kotlin | Jetpack Compose | API",
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays",
@@ -42,6 +46,7 @@
   {
     "iconSrc": "./assets/apps/boyaca_dev.svg",
     "title": "Boyacá Dev",
+    "time": "",
     "description": "First software development conference in Boyacá, Colombia.",
     "technologies": "Community",
     "url": "https://boyaca-dev.org/",
