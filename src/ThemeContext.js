@@ -40,8 +40,8 @@ export const useThemeContext = () => useContext(ThemeContext);
 
 export const ThemeProviderComponent = ({ children }) => {
   const [mode, setMode] = useState('dark');
-  
-  const primaryColor = LightPrimary;
+
+  const primaryColor = mode === 'light' ? LightPrimary : DarkSecondary;
 
   const theme = useMemo(
     () =>
@@ -54,9 +54,9 @@ export const ThemeProviderComponent = ({ children }) => {
             main: primaryColor,
           },
           mode,
-        }
+        },
       }),
-    [mode]
+    [mode, primaryColor]
   );
 
   const toggleTheme = () => {

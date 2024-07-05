@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, Typography, Avatar, Grid, Button, useTheme, Box, Stack } from '@mui/material';
 import { ReactComponent as ResumeIcon } from '../../assets/resume.svg';
 import { LocationOn, School, Language, Home } from '@mui/icons-material';
-import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault, MarginSmall, MarginXSmall, onLightBorderColor, onDarkBorderColor, onLightIconColor, onDarkIconColor, DarkHighlightColor, LightHighlightColor, onDarkTextColor, onLightTextColor } from '../../ThemeContext';
+import { useThemeContext, BorderRadiusCard, BorderRadiusMedium, MarginDefault, MarginSmall, MarginXSmall, onLightBorderColor, onDarkBorderColor, onLightIconColor, onDarkIconColor, onDarkTextColor, onLightTextColor } from '../../ThemeContext';
 import './Intro.css';
 
 function Intro() {

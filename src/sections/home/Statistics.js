@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
 import { useThemeContext, BorderRadiusCard, MarginDefault, onDarkTextColor, onLightTextColor } from '../../ThemeContext';
 import CountUp from 'react-countup';
