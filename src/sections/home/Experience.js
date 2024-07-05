@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box } from '@mui/material';
 import { useThemeContext, MarginDefault, onDarkTextColor, onLightTextColor } from '../../ThemeContext';
-import { ProjectItem } from '../../components/home/ProjectItem';
+import { ProjectItem } from '../../components/home/ProjectItem.js';
 
 function Experience() {
   const [expereinceData, setExperience] = useState([]);
