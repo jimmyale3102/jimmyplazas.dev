@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Android",
+    "level": "Advance",
+    "color": "#ffffff",
+    "icon": "./assets/skills/android.svg"
+  },
+  {
+    "name": "Kotlin",
+    "level": "Advance",
+    "color": "#ffffff",
+    "icon": "./assets/skills/kotlin.svg"
+  },
+  {
+    "name": "Jetpack Compose",
+    "level": "Advance",
+    "color": "#ffffff",
+    "icon": "./assets/skills/jetpack_compose.svg"
+  },
+  {
+    "name": "Material Design",
+    "level": "Advance",
+    "color": "#ffffff",
+    "icon": "./assets/skills/material_design.webp"
+  },
+  {
+    "name": "Firebase",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/firebase.svg"
+  },
+  {
+    "name": "Java",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/java.svg"
+  },
+  {
+    "name": "Git",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/git.svg"
+  },
+  {
+    "name": "HTML",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/html.svg"
+  },
+  {
+    "name": "JavaScript",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/javascript.svg"
+  },
+  {
+    "name": "CSS",
+    "level": "Basic",
+    "color": "#ffffff",
+    "icon": "./assets/skills/css.svg"
+  }
+]

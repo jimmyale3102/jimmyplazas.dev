@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Container, Fab } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
+import { Card, CardContent, CardMedia, Typography, Container} from '@mui/material';
 
 function Projects() {
   return (
@@ -14,9 +13,6 @@ function Projects() {
           <a href="repository_link">View Repository</a>
         </CardContent>
       </Card>
-      <Fab color="primary" aria-label="add" style={{ position: 'fixed', bottom: 16, right: 16 }} sx={{ borderRadius: '16px' }}>
-        <AddIcon />
-      </Fab>
     </Container>
   );
 }

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import BottomNav from './components/BottomNav';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
+import Header from './sections/app/Header';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Projects from './pages/projects/Projects';
+import Skills from './pages/skills/Skills';
+import Contact from './pages/contact/Contact';
 import './App.css';
 import { Container } from '@mui/material';
+import Footer from './sections/app/Footer';
 
 function App() {
 
@@ -20,11 +20,11 @@ function App() {
 
   return (
     <Router>
+      <Header />
       <Container
-        sx={{ maxWidth: 'lg', mt: 0.5 }}
+        style={{maxWidth: '780px'}}
         className={`theme-transition ${isFadingIn ? 'fade-in' : ''}`}
       >
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -32,7 +32,8 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <BottomNav />
+        <Footer />
+        
       </Container>
     </Router>
   );

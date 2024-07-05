@@ -1,12 +1,9 @@
-// src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
-import { ThemeProviderComponent } from './components/ThemeContext';
+import { ThemeProviderComponent } from './ThemeContext';
 
-ReactDOM.render(
+createRoot(document.getElementById('root')).render(
   <ThemeProviderComponent>
     <App />
-  </ThemeProviderComponent>,
-  document.getElementById('root')
+  </ThemeProviderComponent>
 );
