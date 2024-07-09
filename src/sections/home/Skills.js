@@ -8,7 +8,7 @@ function Skills() {
   const borderColor = mode === 'light' ? onLightBorderColor : onDarkBorderColor;
 
   useEffect(() => {
-    fetch('./skills.json')
+    fetch('./content/skills.json')
       .then(response => response.json())
       .then(data => setSkills(data))
       .catch(error => console.error('Error fetching skills data:', error));

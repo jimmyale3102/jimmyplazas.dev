@@ -20,7 +20,7 @@ function Intro() {
             <Stack direction={'column'} spacing={2}>
               <Avatar
                 alt="Profile Picture"
-                src='./assets/profile.jpg'
+                src='./assets/jimmy/jimmy.jpg'
                 style={{ width: 160, height: 160 }}
               />
               <Stack direction={'column'} spacing={0.5}>
@@ -79,7 +79,7 @@ function Intro() {
                     color: iconColor,
                     border: `1px solid ${borderColor}`
                   }}
-                  href='./JimmyPlazas_CV.pdf'
+                  href='./share/Jimmy_Plazas_Resume.pdf'
                   target='_blank'>
                   <ResumeIcon style={{ width: '18px', height: '18px', marginRight: MarginXSmall, fill: iconColor }} />
                   Resume

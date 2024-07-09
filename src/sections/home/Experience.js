@@ -8,7 +8,7 @@ function Experience() {
   const { mode } = useThemeContext();
 
   useEffect(() => {
-    fetch('./experience.json')
+    fetch('./content/experience.json')
       .then(response => response.json())
       .then(data => setExperience(data))
       .catch(error => console.error('Error fetching experience data:', error));
