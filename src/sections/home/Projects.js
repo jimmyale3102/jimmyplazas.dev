@@ -8,7 +8,7 @@ function Projects() {
   const { mode } = useThemeContext();
 
   useEffect(() => {
-    fetch('./projects.json')
+    fetch('./content/projects.json')
       .then(response => response.json())
       .then(data => setProjects(data))
       .catch(error => console.error('Error fetching project data:', error));
