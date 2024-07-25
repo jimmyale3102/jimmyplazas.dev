@@ -11,6 +11,17 @@
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
   },
   {
+    "iconSrc": "./assets/apps/triqui.webp",
+    "title": "BMI Calculator",
+    "time": "",
+    "description": "a simple and intuitive application designed to help users calculate their Body Mass Index (BMI).",
+    "technologies": "iOS | SwiftUI",
+    "url": "https://github.com/jimmyale3102/iOS-IMC",
+    "webUrl": "",
+    "gitHubUrl": "https://github.com/jimmyale3102/iOS-IMC",
+    "playStoreUrl": ""
+  },
+  {
     "iconSrc": "./assets/apps/excuseme.webp",
     "title": "Excuse Me",
     "time": "",
