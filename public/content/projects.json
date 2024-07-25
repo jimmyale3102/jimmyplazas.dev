@@ -11,7 +11,7 @@
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
   },
   {
-    "iconSrc": "./assets/apps/triqui.webp",
+    "iconSrc": "./assets/apps/bmi.webp",
     "title": "BMI Calculator",
     "time": "",
     "description": "a simple and intuitive application designed to help users calculate their Body Mass Index (BMI).",
