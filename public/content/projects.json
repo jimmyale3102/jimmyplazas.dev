@@ -11,10 +11,21 @@
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
   },
   {
+    "iconSrc": "./assets/apps/superhero.webp",
+    "title": "SuperHero Finder",
+    "time": "",
+    "description": "This app is designed to provide information about your favorite superheroes.",
+    "technologies": "iOS | SwiftUI",
+    "url": "https://github.com/jimmyale3102/iOS-superhero-finder",
+    "webUrl": "",
+    "gitHubUrl": "https://github.com/jimmyale3102/iOS-superhero-finder",
+    "playStoreUrl": ""
+  },
+  {
     "iconSrc": "./assets/apps/bmi.webp",
     "title": "BMI Calculator",
     "time": "",
-    "description": "a simple and intuitive application designed to help users calculate their Body Mass Index (BMI).",
+    "description": "A simple and intuitive application designed to help users calculate their Body Mass Index (BMI).",
     "technologies": "iOS | SwiftUI",
     "url": "https://github.com/jimmyale3102/iOS-IMC",
     "webUrl": "",
