@@ -7,7 +7,7 @@ function Statistics() {
   const { mode, toggleTheme } = useThemeContext();
   const yearsOfExperience = 4;
   const projectsWorkedOn = 10;
-  const contributions = 10722;
+  const contributions = 11032;
   const textColor = mode === 'light' ? onLightTextColor : onDarkTextColor;
   return (
     <Box style={{ marginTop: MarginDefault }}>
