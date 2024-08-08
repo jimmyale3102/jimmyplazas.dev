@@ -40,7 +40,7 @@ function Statistics() {
           <Card style={{ borderRadius: BorderRadiusCard }}>
             <CardContent>
               <Typography variant="h4" fontWeight={'bold'}>
-                <CountUp start={0} end={contributions} duration={3} />
+                <CountUp start={0} end={contributions} duration={2} />
               </Typography>
               <Typography variant="body2" fontWeight={'bold'}>
                 <span style={{ color: textColor }} >Contributions</span> on GitHub
