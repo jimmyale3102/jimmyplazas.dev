@@ -42,6 +42,24 @@
     "icon": "./assets/skills/git.svg"
   },
   {
+    "name": "Swift",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/swift.webp"
+  },
+  {
+    "name": "Swift UI",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/swift_ui.webp"
+  },
+  {
+    "name": "My SQL",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/my_sql.webp"
+  },
+  {
     "name": "HTML",
     "level": "Medium",
     "color": "#ffffff",
@@ -58,5 +76,17 @@
     "level": "Basic",
     "color": "#ffffff",
     "icon": "./assets/skills/css.svg"
+  },
+  {
+    "name": "React Js",
+    "level": "Basic",
+    "color": "#ffffff",
+    "icon": "./assets/skills/react_js.webp"
+  },
+  {
+    "name": "PHP",
+    "level": "Basic",
+    "color": "#ffffff",
+    "icon": "./assets/skills/php.webp"
   }
 ]

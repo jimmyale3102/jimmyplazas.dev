@@ -11,6 +11,17 @@
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
   },
   {
+    "iconSrc": "./assets/apps/colombia_holidays.webp",
+    "title": "Festivos Colombia 2024",
+    "time": "",
+    "description": "Application where you will find all the holidays in Colombia.",
+    "technologies": "Kotlin | Android views | API",
+    "url": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays",
+    "webUrl": "",
+    "gitHubUrl": "https://github.com/jimmyale3102/CO-Holidays",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays"
+  },
+  {
     "iconSrc": "./assets/apps/superhero.webp",
     "title": "SuperHero Finder",
     "time": "",
@@ -20,6 +31,17 @@
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/iOS-superhero-finder",
     "playStoreUrl": ""
+  },
+  {
+    "iconSrc": "./assets/apps/world_holidays.webp",
+    "title": "World Holidays",
+    "time": "",
+    "description": "Application where you will be able to find out all holidays over 110 countries.",
+    "technologies": "Kotlin | Jetpack Compose | API",
+    "url": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays",
+    "webUrl": "",
+    "gitHubUrl": "https://github.com/andiosteam-dev/AND_world_holidays",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays"
   },
   {
     "iconSrc": "./assets/apps/bmi.webp",
@@ -42,28 +64,6 @@
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/excuse-me",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme"
-  },
-  {
-    "iconSrc": "./assets/apps/colombia_holidays.webp",
-    "title": "Festivos Colombia 2024",
-    "time": "",
-    "description": "Application where you will find all the holidays in Colombia.",
-    "technologies": "Kotlin | Android views | API",
-    "url": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays",
-    "webUrl": "",
-    "gitHubUrl": "https://github.com/jimmyale3102/CO-Holidays",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays"
-  },
-  {
-    "iconSrc": "./assets/apps/world_holidays.webp",
-    "title": "World Holidays",
-    "time": "",
-    "description": "Application where you will be able to find out all holidays over 110 countries.",
-    "technologies": "Kotlin | Jetpack Compose | API",
-    "url": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays",
-    "webUrl": "",
-    "gitHubUrl": "https://github.com/andiosteam-dev/AND_world_holidays",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays"
   },
   {
     "iconSrc": "./assets/apps/boyaca_dev.svg",
