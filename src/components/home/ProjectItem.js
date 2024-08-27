@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme, Avatar, CardActionArea, Card, CardContent, Typography, Grid } from '@mui/material';
-import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight, LightHighlightColor, DarkHighlightColor } from '../../ThemeContext';
+import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight, LightHighlightColor, DarkHighlightColor, onLightTextColor, onDarkTextColor } from '../../ThemeContext';
 import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
 import { ReactComponent as PlayStoreIcon } from '../../assets/play_store.svg';
 import WebIcon from '@mui/icons-material/Web';
@@ -12,7 +12,7 @@ function ProjectItem({ iconSrc, title, time, description, technologies, url, web
   const cardBackgroundColor = theme.palette.mode === 'light' ? BackgroundColorLight : BackgroundColorDark;
 
   return (
-    <Card style={{ backgroundColor: cardBackgroundColor, boxShadow: 'none', borderRadius: BorderRadiusCard }}>
+    <Card style={{ backgroundColor: cardBackgroundColor, boxShadow: 'none', borderRadius: BorderRadiusCard, marginBottom: "16px" }}>
       <CardActionArea href={url} target='_blank' style={{ backgroundColor: cardBackgroundColor }}>
         <CardContent>
           <Grid alignItems={'top'} style={{ display: 'flex' }}>
@@ -54,7 +54,7 @@ function ProjectItem({ iconSrc, title, time, description, technologies, url, web
                 {description}
               </Typography>
               <Typography variant="caption">
-                <span style={{ color: mode === 'light' ? LightHighlightColor : DarkHighlightColor }}>
+                <span style={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor, fontWeight: "bold" }}>
                   {technologies}
                 </span>
               </Typography>
