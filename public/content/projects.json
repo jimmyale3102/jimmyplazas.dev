@@ -1,5 +1,16 @@
 [
   {
+    "iconSrc": "./assets/apps/ozwaffle.svg",
+    "title": "OzWaffle",
+    "time": "",
+    "description": "Website for a waffle shop located in Melbourne, Australia",
+    "technologies": "ReactJs | JavaScript | Vercel",
+    "url": "https://ozwaffle.com.au",
+    "webUrl": "https://ozwaffle.com.au",
+    "gitHubUrl": "",
+    "playStoreUrl": ""
+  },
+  {
     "iconSrc": "./assets/apps/triqui.webp",
     "title": "Tic Tac Toe - Triqui",
     "time": "",
