@@ -54,6 +54,9 @@ export const ThemeProviderComponent = ({ children }) => {
             main: primaryColor,
           },
           mode,
+          background: {
+            default: mode === 'light' ? '#fafafa' : "#141414",
+          }
         },
       }),
     [mode, primaryColor]
