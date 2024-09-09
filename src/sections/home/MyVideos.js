@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box } from '@mui/material';
 import { useThemeContext, MarginDefault, onDarkTextColor, onLightTextColor } from '../../ThemeContext';
-import ProjectItem from '../../components/home/ProjectItem';
+import VideoItem from '../../components/home/videoItem';
 
 function MyVideos() {
-  const [expereinceData, setExperience] = useState([]);
+  const [videosData, setVideos] = useState([]);
   const { mode } = useThemeContext();
 
   useEffect(() => {
-    fetch('./content/experience.json')
+    fetch('./content/videos.json')
       .then(response => response.json())
-      .then(data => setExperience(data))
+      .then(data => setVideos(data))
       .catch(error => console.error('Error fetching experience data:', error));
   }, []);
 
@@ -20,21 +20,17 @@ function MyVideos() {
         variant="h4"
         fontWeight={'bold'}
         style={{ marginLeft: MarginDefault, marginBottom: MarginDefault }}>
-        <span style={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor }} >Experience</span>
+        <span style={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor }} >My videos</span>
       </Typography>
 
-      {expereinceData.map((experienceItem, index) => (
-        <ProjectItem
+      {videosData.map((videoItem, index) => (
+        <VideoItem
           key={index}
-          iconSrc={experienceItem.iconSrc}
-          title={experienceItem.title}
-          time={experienceItem.time}
-          description={experienceItem.description}
-          technologies={experienceItem.technologies}
-          url={experienceItem.url}
-          webUrl={experienceItem.webUrl}
-          gitHubUrl={experienceItem.gitHubUrl}
-          playStoreUrl={experienceItem.playStoreUrl}
+          videoId={videoItem.videoId}
+          title={videoItem.title}
+          description={videoItem.description}
+          videoAlt={videoItem.videoAlt}
+          url={videoItem.url}
         />
       ))}
 

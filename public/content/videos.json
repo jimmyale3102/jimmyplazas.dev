@@ -1,0 +1,16 @@
+[
+  {
+    "videoId": "SZccELXLxlE",
+    "title": "¡Generate Acronyms in Kotlin in 7 Minutes! | Learn Programming Easily and Quickly",
+    "description": "In this video, I will show you how I solve the fun problem of creating acronyms using Kotlin. 🧠💡",
+    "videoAlt": "Video creating an acronyms generator in Kotlin",
+    "url": "https://www.youtube.com/watch?v=SZccELXLxlE"
+  },
+  {
+    "videoId": "6gBR0qaxY0o",
+    "title": "¡Solve FizzBuzz in Kotlin in Less than 5 Minutes! | Programming Challenge for Beginners",
+    "description": "In this super quick video, I solve the famous FizzBuzz programming challenge step by step using Kotlin. 🧑‍💻",
+    "videoAlt": "Video solving the famouse FizzBuzz challenge in Kotlin",
+    "url": "https://www.youtube.com/watch?v=6gBR0qaxY0o"
+  }
+]
