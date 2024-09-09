@@ -10,33 +10,38 @@ function VideoItem({ videoId, title, description, videoAlt, url }) {
   const cardBackgroundColor = theme.palette.mode === 'light' ? BackgroundColorLight : BackgroundColorDark;
 
   return (
-    <Card style={{ backgroundColor: cardBackgroundColor, boxShadow: 'none', borderRadius: BorderRadiusCard, marginBottom: "16px" }}>
+    <Card
+      style={{
+        height: 'auto',
+        backgroundColor: cardBackgroundColor,
+        boxShadow: 'none',
+        borderRadius: BorderRadiusCard,
+        marginBottom: "16px",
+      }}
+    >
       <CardActionArea target='_blank' style={{ backgroundColor: cardBackgroundColor }}>
         <CardContent>
-          <Grid alignItems={'top'} style={{ display: 'flex' }}>
-
-            <Grid item marginRight={2} style={{ flex: 1 }}>
+          <Grid container spacing={2} alignItems={"top"} style={{display: 'flex'}}>
+            <Grid item xs={12} sm={6}>
               <lite-youtube
-                style={{ width: "560", height: "315" }}
-                videoid={videoId}>
-              </lite-youtube>
+                style={{ width: '100%', height: 'auto', maxWidth: '560px', maxHeight: '315px' }}
+                videoid={videoId}
+              />
             </Grid>
 
-            <Grid item style={{ flex: 1 }}>
+            <Grid item xs={12} sm={6}>
               <Typography variant="body1" fontWeight={'bold'}>
                 {title}
               </Typography>
 
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="text.secondary" paragraph>
                 {description}
               </Typography>
 
-              <div alignSelf={'bottom'} style={{ display: 'flex', marginTop: '16px' }}>
+              <div style={{ display: 'flex', marginTop: '16px' }}>
                 <IconButtonComponent text="Watch on YouTube" href={url} IconComponent={YouTube} />
               </div>
-
             </Grid>
-
           </Grid>
         </CardContent>
       </CardActionArea>
