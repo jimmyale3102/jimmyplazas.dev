@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme, IconButton, Typography } from '@mui/material';
 import { BorderRadiusMedium, onLightIconColor, onDarkIconColor } from '../../ThemeContext';
 
-function IconButtonComponent(something, href, IconComponent) {
+function IconButtonComponent({text = '', href, IconComponent}) {
   const theme = useTheme();
   const iconColor = theme.palette.mode === 'light' ? onLightIconColor : onDarkIconColor;
 
@@ -14,7 +14,7 @@ function IconButtonComponent(something, href, IconComponent) {
       >
         <IconComponent style={{ fill: iconColor }} />
         <Typography paddingLeft={'8px'} variant="body2" color="text.secondary" alignSelf={'center'}>
-          {something}
+          {text}
         </Typography>
       </IconButton>
     ) : null
