@@ -7,8 +7,8 @@ import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
 import { ReactComponent as XIcon } from '../../assets/x.svg';
 import { ReactComponent as InstagramIcon } from '../../assets/instagram.svg';
 import { ReactComponent as YouTubeIcon } from '../../assets/youtube.svg';
-import IconButtonComponent from '../../components/common/IconButton';
-import { Email} from '@mui/icons-material';
+import { Email } from '@mui/icons-material';
+import IconButtonComponent from '../../components/common/IconButtonComponent';
 
 function Footer() {
   const theme = useTheme();
@@ -24,12 +24,12 @@ function Footer() {
       }}>
       <Stack direction={'column'}>
         <Box>
-          {IconButtonComponent('https://github.com/jimmyale3102', GitHubIcon)}
-          {IconButtonComponent('https://www.linkedin.com/in/jimmyplazas/', LinkedInIcon)}
-          {IconButtonComponent('https://twitter.com/jimmyale3201', XIcon)}
-          {IconButtonComponent('https://www.instagram.com/aleejo_loopez/', InstagramIcon)}
-          {IconButtonComponent('https://www.youtube.com/@jimmy_code/videos', YouTubeIcon)}
-          {IconButtonComponent('mailto:hi@jimmyplazas.dev', Email)}
+          <IconButtonComponent href='https://github.com/jimmyale3102' IconComponent={GitHubIcon} />
+          <IconButtonComponent href='https://www.linkedin.com/in/jimmyplazas/' IconComponent={LinkedInIcon} />
+          <IconButtonComponent href='https://twitter.com/jimmyale3201' IconComponent={XIcon} />
+          <IconButtonComponent href='https://www.instagram.com/aleejo_loopez/' IconComponent={InstagramIcon} />
+          <IconButtonComponent href='https://www.youtube.com/@jimmy_code/videos' IconComponent={YouTubeIcon} />
+          <IconButtonComponent href='mailto:hi@jimmyplazas.dev' IconComponent={Email} />
         </Box>
         <Typography variant="body2" fontStyle={'italic'} style={{ justifyContent: 'center', textAlign: 'center', display: 'flex', alignItems: 'center' }}>
           Made with

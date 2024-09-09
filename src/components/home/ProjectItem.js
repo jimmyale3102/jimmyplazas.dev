@@ -4,7 +4,7 @@ import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorD
 import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
 import { ReactComponent as PlayStoreIcon } from '../../assets/play_store.svg';
 import WebIcon from '@mui/icons-material/Web';
-import IconButtonComponent from '../common/IconButton';
+import IconButtonComponent from '../common/IconButtonComponent';
 
 function ProjectItem({ iconSrc, title, time, description, technologies, url, webUrl, gitHubUrl, playStoreUrl }) {
   const { mode } = useThemeContext();
@@ -61,9 +61,9 @@ function ProjectItem({ iconSrc, title, time, description, technologies, url, web
             </Grid>
 
             <Grid item alignSelf={'center'} style={{ display: 'flex' }}>
-              {IconButtonComponent(webUrl, WebIcon)}
-              {IconButtonComponent(gitHubUrl, GitHubIcon)}
-              {IconButtonComponent(playStoreUrl, PlayStoreIcon)}
+              <IconButtonComponent href={webUrl} IconComponent={WebIcon} />
+              <IconButtonComponent href={gitHubUrl} IconComponent={GitHubIcon} />
+              <IconButtonComponent href={playStoreUrl} IconComponent={PlayStoreIcon} />
             </Grid>
 
           </Grid>
