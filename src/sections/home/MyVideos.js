@@ -36,7 +36,7 @@ function MyVideos() {
       ))}
       <div style={{ display: 'flex', justifyContent: 'end' }}>
       <Button
-        style={{ margin: '4px', borderRadius: BorderRadiusMedium, textTransform: 'none'}}
+        style={{ borderRadius: BorderRadiusMedium, textTransform: 'none'}}
         onClick={() => window.open(youtubeUrl, '_blank')}
       >
         <Typography
