@@ -24,12 +24,12 @@ function Footer() {
       }}>
       <Stack direction={'column'}>
         <Box>
-          {IconButtonComponent('https://github.com/jimmyale3102', GitHubIcon)}
-          {IconButtonComponent('https://www.linkedin.com/in/jimmyplazas/', LinkedInIcon)}
-          {IconButtonComponent('https://twitter.com/jimmyale3201', XIcon)}
-          {IconButtonComponent('https://www.instagram.com/aleejo_loopez/', InstagramIcon)}
-          {IconButtonComponent('https://www.youtube.com/@jimmy_code/videos', YouTubeIcon)}
-          {IconButtonComponent('mailto:hi@jimmyplazas.dev', Email)}
+          {IconButtonComponent('', 'https://github.com/jimmyale3102', GitHubIcon)}
+          {IconButtonComponent('', 'https://www.linkedin.com/in/jimmyplazas/', LinkedInIcon)}
+          {IconButtonComponent('', 'https://twitter.com/jimmyale3201', XIcon)}
+          {IconButtonComponent('', 'https://www.instagram.com/aleejo_loopez/', InstagramIcon)}
+          {IconButtonComponent('', 'https://www.youtube.com/@jimmy_code/videos', YouTubeIcon)}
+          {IconButtonComponent('', 'mailto:hi@jimmyplazas.dev', Email)}
         </Box>
         <Typography variant="body2" fontStyle={'italic'} style={{ justifyContent: 'center', textAlign: 'center', display: 'flex', alignItems: 'center' }}>
           Made with

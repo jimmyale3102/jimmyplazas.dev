@@ -61,9 +61,9 @@ function ProjectItem({ iconSrc, title, time, description, technologies, url, web
             </Grid>
 
             <Grid item alignSelf={'center'} style={{ display: 'flex' }}>
-              {IconButtonComponent(webUrl, WebIcon)}
-              {IconButtonComponent(gitHubUrl, GitHubIcon)}
-              {IconButtonComponent(playStoreUrl, PlayStoreIcon)}
+              {IconButtonComponent("", webUrl, WebIcon)}
+              {IconButtonComponent("", gitHubUrl, GitHubIcon)}
+              {IconButtonComponent("", playStoreUrl, PlayStoreIcon)}
             </Grid>
 
           </Grid>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTheme, CardActionArea, Card, CardContent, Typography, Grid } from '@mui/material';
 import { useThemeContext, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight } from '../../ThemeContext';
+import IconButtonComponent from '../common/IconButton';
+import { YouTube } from '@mui/icons-material';
 
 function VideoItem({ videoId, title, description, videoAlt, url }) {
   const { mode } = useThemeContext();
@@ -28,6 +30,11 @@ function VideoItem({ videoId, title, description, videoAlt, url }) {
               <Typography variant="body2" color="text.secondary">
                 {description}
               </Typography>
+
+              <div alignSelf={'bottom'} style={{ display: 'flex', marginTop: '16px' }}>
+                {IconButtonComponent("Watch on YouTube", url, YouTube)}
+              </div>
+
             </Grid>
 
           </Grid>
