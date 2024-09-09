@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, Box } from '@mui/material';
-import { useThemeContext, MarginDefault, onDarkTextColor, onLightTextColor } from '../../ThemeContext';
+import { Typography, Box, Button } from '@mui/material';
+import { useThemeContext, MarginDefault, onDarkTextColor, onLightTextColor, BorderRadiusMedium } from '../../ThemeContext';
 import VideoItem from '../../components/home/videoItem';
 
 function MyVideos() {
   const [videosData, setVideos] = useState([]);
   const { mode } = useThemeContext();
+  const youtubeUrl = "https://www.youtube.com/@jimmy_coding/videos"
 
   useEffect(() => {
     fetch('./content/videos.json')
@@ -33,6 +34,18 @@ function MyVideos() {
           url={videoItem.url}
         />
       ))}
+      <div style={{ display: 'flex', justifyContent: 'end' }}>
+      <Button
+        style={{ margin: '4px', borderRadius: BorderRadiusMedium, textTransform: 'none'}}
+        onClick={() => window.open(youtubeUrl, '_blank')}
+      >
+        <Typography
+          style={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor }}
+          margin={'4px'} variant="h6" fontWeight={'bold'} alignSelf={'center'}>
+          Watch all
+        </Typography>
+      </Button>
+      </div>
 
     </Box>
   );
