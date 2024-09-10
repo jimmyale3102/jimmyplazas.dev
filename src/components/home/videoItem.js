@@ -24,7 +24,7 @@ function VideoItem({ videoId, title, description, videoAlt, url }) {
           <Grid container spacing={2} alignItems={"top"} style={{display: 'flex'}}>
             <Grid item xs={12} sm={6}>
               <lite-youtube
-                style={{ width: '100%', height: 'auto', maxWidth: '560px', maxHeight: '315px' }}
+                style={{ width: '100%', height: 'auto', maxWidth: '560px', maxHeight: '315px', borderRadius: BorderRadiusCard }}
                 videoid={videoId}
               />
             </Grid>
