@@ -31,7 +31,11 @@ function Footer() {
           <IconButtonComponent href='https://www.youtube.com/@jimmy_code/videos' IconComponent={YouTubeIcon} />
           <IconButtonComponent href='mailto:hi@jimmyplazas.dev' IconComponent={Email} />
         </Box>
-        <Typography variant="body2" fontStyle={'italic'} style={{ justifyContent: 'center', textAlign: 'center', display: 'flex', alignItems: 'center' }}>
+        <Typography
+          margin={MarginDefault}
+          variant="body2"
+          fontStyle={'italic'}
+          style={{ justifyContent: 'center', textAlign: 'center', display: 'flex', alignItems: 'center' }}>
           Made with
           <Favorite style={{ width: '18px', height: '18px', fill: iconColor, marginInline: MarginXSmall }} />
           by Jimmy.
