@@ -79,7 +79,7 @@ function Intro() {
                     color: iconColor,
                     border: `1px solid ${borderColor}`
                   }}
-                  href='./share/Jimmy_Plazas_Resume.pdf'
+                  href='./share/CV.pdf'
                   target='_blank'>
                   <ResumeIcon style={{ width: '18px', height: '18px', marginRight: MarginXSmall, fill: iconColor }} />
                   Resume
