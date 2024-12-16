@@ -1,25 +1,14 @@
 [
   {
-    "iconSrc": "./assets/apps/ozwaffle.svg",
-    "title": "OzWaffle",
+    "iconSrc": "./assets/apps/shopneutral.webp",
+    "title": "Shop Neutral",
     "time": "",
-    "description": "Website for a waffle shop located in Melbourne, Australia",
-    "technologies": "ReactJs • JavaScript • Vercel",
-    "url": "https://www.ozwaffle.com.au",
-    "webUrl": "https://www.ozwaffle.com.au",
+    "description": "Website for a Clean Green Living in Melbourne, Australia",
+    "technologies": "Shopify",
+    "url": "https://shopneutral.com.au/",
+    "webUrl": "https://shopneutral.com.au/",
     "gitHubUrl": "",
     "playStoreUrl": ""
-  },
-  {
-    "iconSrc": "./assets/apps/triqui.webp",
-    "title": "Tic Tac Toe - Triqui",
-    "time": "",
-    "description": "A simple yet entertaining game allows users either to play single mode game or multiplayer.",
-    "technologies": "Kotlin • Jetpack Compose • Firebase",
-    "url": "https://play.google.com/store/apps/details?id=dev.alejo.triqui",
-    "webUrl": "",
-    "gitHubUrl": "https://github.com/jimmyale3102/tictactoe_triqui",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
   },
   {
     "iconSrc": "./assets/apps/colombia_holidays.webp",
@@ -31,6 +20,17 @@
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/CO-Holidays",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays"
+  },
+  {
+    "iconSrc": "./assets/apps/triqui.webp",
+    "title": "Tic Tac Toe - Triqui",
+    "time": "",
+    "description": "A simple yet entertaining game allows users either to play single mode game or multiplayer.",
+    "technologies": "Kotlin • Jetpack Compose • Firebase",
+    "url": "https://play.google.com/store/apps/details?id=dev.alejo.triqui",
+    "webUrl": "",
+    "gitHubUrl": "https://github.com/jimmyale3102/tictactoe_triqui",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
   },
   {
     "iconSrc": "./assets/apps/superhero.webp",
@@ -53,6 +53,17 @@
     "webUrl": "",
     "gitHubUrl": "https://github.com/andiosteam-dev/AND_world_holidays",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays"
+  },
+  {
+    "iconSrc": "./assets/apps/ozwaffle.svg",
+    "title": "OzWaffle",
+    "time": "",
+    "description": "Website for a waffle shop located in Melbourne, Australia",
+    "technologies": "ReactJs • JavaScript • Vercel",
+    "url": "https://www.ozwaffle.com.au",
+    "webUrl": "https://www.ozwaffle.com.au",
+    "gitHubUrl": "",
+    "playStoreUrl": ""
   },
   {
     "iconSrc": "./assets/apps/bmi.webp",
