@@ -9,7 +9,7 @@ function IconButtonComponent({ text = '', href, IconComponent }) {
   return (
     href ? (
       <IconButton
-        style={{ marginRight: '4px', borderRadius: BorderRadiusMedium }}
+        sx={{ mr: '4px', borderRadius: BorderRadiusMedium }}
         onClick={() => window.open(href, '_blank')}
       >
         <IconComponent style={{ fill: iconColor }} />
