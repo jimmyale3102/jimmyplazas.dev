@@ -39,7 +39,7 @@ function Intro() {
                 <Stack direction={'row'} spacing={1}>
                   <LocationOn style={{ width: '18px', height: '18px', marginRight: MarginXSmall, color: iconColor }} />
                   <Typography variant="body2">
-                    Melbourne, Australia 🇦🇺
+                    Bangkok, Thailand 🇹🇭
                   </Typography>
                 </Stack>
                 <Stack direction={'row'} spacing={1}>
@@ -79,7 +79,7 @@ function Intro() {
                     color: iconColor,
                     border: `1px solid ${borderColor}`
                   }}
-                  href='./share/CV.pdf'
+                  href='./share/resume.pdf'
                   target='_blank'>
                   <ResumeIcon style={{ width: '18px', height: '18px', marginRight: MarginXSmall, fill: iconColor }} />
                   Resume
