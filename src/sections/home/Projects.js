@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box } from '@mui/material';
-import { useThemeContext, MarginDefault, onLightTextColor, onDarkTextColor } from '../../ThemeContext';
+import { useThemeContext, MarginDefault, onLightTextColor, onDarkTextColor, MarginXBig } from '../../ThemeContext';
 import ProjectItem from '../../components/home/ProjectItem';
 
 function Projects() {
@@ -15,7 +15,7 @@ function Projects() {
   }, []);
 
   return (
-    <Box >
+    <Box style={{ marginTop: MarginXBig }}>
       <Typography
         variant="h4"
         fontWeight={'bold'}
