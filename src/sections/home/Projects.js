@@ -3,7 +3,6 @@ import { Typography, Box, Button } from '@mui/material';
 import { useThemeContext, MarginDefault, onLightTextColor, onDarkTextColor, MarginXBig, BorderRadiusMedium } from '../../ThemeContext';
 import ProjectItem from '../../components/home/ProjectItem';
 import { ArrowForward } from '@mui/icons-material';
-import IconButtonComponent from '../../components/common/IconButtonComponent';
 import { useNavigate } from 'react-router-dom';
 
 function ProjectsList({ showAllProjects = true }) {
@@ -45,7 +44,7 @@ function ProjectsList({ showAllProjects = true }) {
       {!showAllProjects && (
         <div style={{ display: 'flex', justifyContent: 'end' }}>
           <Button
-             onClick={() => navigate('./projects')} 
+            onClick={() => navigate('./projects')}
             variant="contained"
             startIcon={<ArrowForward />}
             style={{ borderRadius: BorderRadiusMedium }}

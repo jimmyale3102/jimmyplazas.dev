@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box, Button } from '@mui/material';
 import { useThemeContext, MarginDefault, onDarkTextColor, onLightTextColor, BorderRadiusMedium, MarginXBig } from '../../ThemeContext';
-import IconButtonComponent from '../../components/common/IconButtonComponent';
 import { ArrowForward, YouTube } from '@mui/icons-material';
 import Slider from "react-slick";
 import VideoItem from '../../components/home/VideoItem';
@@ -81,22 +80,22 @@ function MyVideos() {
         />
       ))}
       <div style={{ display: 'flex', justifyContent: 'end' }}>
-          <Button
-            onClick={() => window.open(youtubeUrl, '_blank')}
-            variant="contained"
-            startIcon={<ArrowForward />}
-            style={{ borderRadius: BorderRadiusMedium }}
+        <Button
+          onClick={() => window.open(youtubeUrl, '_blank')}
+          variant="contained"
+          startIcon={<ArrowForward />}
+          style={{ borderRadius: BorderRadiusMedium }}
+        >
+          <Typography
+            style={{ textTransform: 'none' }}
+            variant={"subtitle1"}
+            alignSelf={'flex-start'}
+            fontWeight={"bold"}
           >
-            <Typography
-              style={{ textTransform: 'none' }}
-              variant={"subtitle1"}
-              alignSelf={'flex-start'}
-              fontWeight={"bold"}
-            >
-              Watch all
-            </Typography>
-          </Button>
-        </div>
+            Watch all
+          </Typography>
+        </Button>
+      </div>
 
     </Box>
   );

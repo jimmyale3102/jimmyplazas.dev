@@ -10,7 +10,7 @@ function IconButtonComponent({
   fontWeight = "normal",
   fontColor = "text.secondary",
   fontStyle = {},
-  openInNewTab = true 
+  openInNewTab = true
 }) {
   const theme = useTheme();
   const iconColor = theme.palette.mode === 'light' ? onLightIconColor : onDarkIconColor;

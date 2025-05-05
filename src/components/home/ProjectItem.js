@@ -37,14 +37,14 @@ function ProjectItem({ iconSrc, title, time, description, technologies, url, web
             </Grid>
 
             <Grid item style={{ flex: 1 }}>
-              <Grid container direction={'row'} display={{display: '-ms-inline-flexbox'}}>
-                <Grid item style={{display: 'flex'}}>
+              <Grid container direction={'row'} display={{ display: '-ms-inline-flexbox' }}>
+                <Grid item style={{ display: 'flex' }}>
                   <Typography variant="body2" fontWeight={'bold'}>
                     {title}
                   </Typography>
                 </Grid>
-                <Grid item style={{flex: 1}}>
-                  <Typography variant="body2" color="text.secondary" style={{textAlign: 'end'}}>
+                <Grid item style={{ flex: 1 }}>
+                  <Typography variant="body2" color="text.secondary" style={{ textAlign: 'end' }}>
                     {time}
                   </Typography>
                 </Grid>

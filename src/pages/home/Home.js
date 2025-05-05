@@ -22,7 +22,7 @@ function Home() {
       <ProjectsList showAllProjects={false} />
       <Skills />
       <Experience />
-      <MyVideos /> 
+      <MyVideos />
     </Container>
   );
 }
