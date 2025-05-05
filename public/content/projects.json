@@ -8,7 +8,8 @@
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/CO-Holidays",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays"
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays",
+    "showInHome": true
   },
   {
     "iconSrc": "./assets/apps/rickandmorty.webp",
@@ -19,7 +20,8 @@
     "url": "https://github.com/jimmyale3102/Rick-Morty-KMP",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/Rick-Morty-KMP",
-    "playStoreUrl": ""
+    "playStoreUrl": "",
+    "showInHome": true
   },
   {
     "iconSrc": "./assets/apps/triqui.webp",
@@ -30,7 +32,8 @@
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.triqui",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/tictactoe_triqui",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui",
+    "showInHome": true
   },
   {
     "iconSrc": "./assets/apps/world_holidays.webp",
@@ -41,7 +44,8 @@
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays",
     "webUrl": "",
     "gitHubUrl": "https://github.com/andiosteam-dev/AND_world_holidays",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays"
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays",
+    "showInHome": false
   },
   {
     "iconSrc": "./assets/apps/superhero.webp",
@@ -52,7 +56,8 @@
     "url": "https://github.com/jimmyale3102/iOS-superhero-finder",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/iOS-superhero-finder",
-    "playStoreUrl": ""
+    "playStoreUrl": "",
+    "showInHome": false
   },
   {
     "iconSrc": "./assets/apps/noticas.webp",
@@ -63,7 +68,8 @@
     "url": "https://github.com/jimmyale3102/Noticas",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/Noticas",
-    "playStoreUrl": ""
+    "playStoreUrl": "",
+    "showInHome": true
   },
   {
     "iconSrc": "./assets/apps/bmi.webp",
@@ -74,7 +80,8 @@
     "url": "https://github.com/jimmyale3102/iOS-IMC",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/iOS-IMC",
-    "playStoreUrl": ""
+    "playStoreUrl": "",
+    "showInHome": true
   },
   {
     "iconSrc": "./assets/apps/compose_calendar.svg",
@@ -85,7 +92,8 @@
     "url": "https://github.com/jimmyale3102/compose-calendar",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/compose-calendar",
-    "playStoreUrl": ""
+    "playStoreUrl": "",
+    "showInHome": true
   },
   {
     "iconSrc": "./assets/apps/excuseme.webp",
@@ -96,7 +104,8 @@
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/excuse-me",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme"
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme",
+    "showInHome": false
   },
   {
     "iconSrc": "./assets/apps/Favorite_places.svg",
@@ -107,7 +116,8 @@
     "url": "https://github.com/jimmyale3102/iOS-favorite-places",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/iOS-favorite-places",
-    "playStoreUrl": ""
+    "playStoreUrl": "",
+    "showInHome": false
   },
   {
     "iconSrc": "./assets/apps/ozwaffle.svg",
@@ -118,7 +128,8 @@
     "url": "https://www.ozwaffle.com.au",
     "webUrl": "https://www.ozwaffle.com.au",
     "gitHubUrl": "",
-    "playStoreUrl": ""
+    "playStoreUrl": "",
+    "showInHome": false
   },
   {
     "iconSrc": "./assets/apps/shopneutral.webp",
@@ -129,7 +140,8 @@
     "url": "https://shopneutral.com.au/",
     "webUrl": "https://shopneutral.com.au/",
     "gitHubUrl": "",
-    "playStoreUrl": ""
+    "playStoreUrl": "",
+    "showInHome": true
   },
   {
     "iconSrc": "./assets/apps/boyaca_dev.svg",
@@ -140,6 +152,7 @@
     "url": "https://boyaca-dev.org/",
     "webUrl": "https://boyaca-dev.org/",
     "gitHubUrl": "",
-    "playStoreUrl": ""
+    "playStoreUrl": "",
+    "showInHome": true
   }
 ]
