@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import './App.css';
 import { Container } from '@mui/material';
 import Footer from './sections/app/Footer';
+import Projects from './pages/projects/Projects';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Footer />
         
