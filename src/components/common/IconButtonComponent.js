@@ -2,7 +2,16 @@ import React from 'react';
 import { useTheme, IconButton, Typography } from '@mui/material';
 import { BorderRadiusMedium, onLightIconColor, onDarkIconColor } from '../../ThemeContext';
 
-function IconButtonComponent({ text = '', href, IconComponent, variant = "body2", fontWeight = "normal", fontColor = "text.secondary", fontStyle = {} }) {
+function IconButtonComponent({
+  text = '',
+  href,
+  IconComponent,
+  variant = "body2",
+  fontWeight = "normal",
+  fontColor = "text.secondary",
+  fontStyle = {},
+  openInNewTab = true 
+}) {
   const theme = useTheme();
   const iconColor = theme.palette.mode === 'light' ? onLightIconColor : onDarkIconColor;
 
@@ -10,7 +19,7 @@ function IconButtonComponent({ text = '', href, IconComponent, variant = "body2"
     href ? (
       <IconButton
         style={{ marginRight: '4px', borderRadius: BorderRadiusMedium }}
-        onClick={() => window.open(href, '_blank')}
+        onClick={() => openInNewTab ? window.open(href, '_blank') : window.open(href)}
       >
         <IconComponent style={{ fill: iconColor }} />
         {
