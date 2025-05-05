@@ -12,13 +12,13 @@
   },
   {
     "iconSrc": "./assets/apps/rickandmorty.webp",
-    "title": "Rick-Morty-KMP",
+    "title": "Rick Morty KMP",
     "time": "",
     "description": "A cross-platform app using KMP and Room that lets you explore Rick and Morty characters, view the character of the day, and go through the episodes trailers.",
-    "technologies": "KMP • Jetpack Compose • Room • Koin",
-    "url": "",
+    "technologies": "KMP • Jetpack Compose • Room • Koin • Ktor",
+    "url": "https://github.com/jimmyale3102/Rick-Morty-KMP",
     "webUrl": "",
-    "gitHubUrl": " https://github.com/jimmyale3102/Rick-Morty-KMP",
+    "gitHubUrl": "https://github.com/jimmyale3102/Rick-Morty-KMP",
     "playStoreUrl": ""
   },
   {
@@ -60,7 +60,7 @@
     "time": "",
     "description": "A simple Android app built with Jetpack Compose to create, view, edit, and delete notes.",
     "technologies": "Kotlin • Jetpack Compose • Room",
-    "url": "",
+    "url": "https://github.com/jimmyale3102/Noticas",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/Noticas",
     "playStoreUrl": ""
@@ -82,7 +82,7 @@
     "time": "",
     "description": "A Calendar library entirely with Jetpack Compose. Designed to offers a flexible interface for managing calendar events.",
     "technologies": "Kotlin • Jetpack Compose",
-    "url": "",
+    "url": "https://github.com/jimmyale3102/compose-calendar",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/compose-calendar",
     "playStoreUrl": ""
@@ -104,9 +104,9 @@
     "time": "",
     "description": "An interactive map app that lets users tap to add, name, and mark favorite locations, with a list view of saved places",
     "technologies": "iOS • SwiftUI",
-    "url": "",
+    "url": "https://github.com/jimmyale3102/iOS-favorite-places",
     "webUrl": "",
-    "gitHubUrl": " https://github.com/jimmyale3102/iOS-favorite-places",
+    "gitHubUrl": "https://github.com/jimmyale3102/iOS-favorite-places",
     "playStoreUrl": ""
   },
   {
