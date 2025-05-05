@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Typography, Box, Button } from '@mui/material';
 import { useThemeContext, MarginDefault, onDarkTextColor, onLightTextColor, BorderRadiusMedium, MarginXBig } from '../../ThemeContext';
 import { ArrowForward, YouTube } from '@mui/icons-material';
+import VideoItem from '../../components/home/VideoItem'
 import Slider from "react-slick";
-import VideoItem from '../../components/home/VideoItem';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ShortsItem from '../../components/home/ShortsItem';
