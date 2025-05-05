@@ -1,25 +1,25 @@
 [
   {
-    "iconSrc": "./assets/apps/shopneutral.webp",
-    "title": "Shop Neutral",
-    "time": "",
-    "description": "Website for a Clean Green Living in Melbourne, Australia",
-    "technologies": "Shopify",
-    "url": "https://shopneutral.com.au/",
-    "webUrl": "https://shopneutral.com.au/",
-    "gitHubUrl": "",
-    "playStoreUrl": ""
-  },
-  {
     "iconSrc": "./assets/apps/colombia_holidays.webp",
-    "title": "Festivos Colombia 2024",
+    "title": "Festivos Colombia 2025",
     "time": "",
-    "description": "Application where you will find all the holidays in Colombia.",
+    "description": "An Android app to explore Colombian holidays by month or year, check the next upcoming holiday, get brief details, and enable holiday reminders.",
     "technologies": "Kotlin • Android views • API",
     "url": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays",
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/CO-Holidays",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.colombian_holidays"
+  },
+  {
+    "iconSrc": "./assets/apps/rickandmorty.webp",
+    "title": "Rick-Morty-KMP",
+    "time": "",
+    "description": "A cross-platform app using KMP and Room that lets you explore Rick and Morty characters, view the character of the day, and go through the episodes trailers.",
+    "technologies": "KMP • Jetpack Compose • Room • Koin",
+    "url": "",
+    "webUrl": "",
+    "gitHubUrl": " https://github.com/jimmyale3102/Rick-Morty-KMP",
+    "playStoreUrl": ""
   },
   {
     "iconSrc": "./assets/apps/triqui.webp",
@@ -33,6 +33,17 @@
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.triqui"
   },
   {
+    "iconSrc": "./assets/apps/world_holidays.webp",
+    "title": "World Holidays",
+    "time": "",
+    "description": "A global world Holidays app where users can select a country and explore its official holidays with detailed views and reminders.",
+    "technologies": "Kotlin • Jetpack Compose • API",
+    "url": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays",
+    "webUrl": "",
+    "gitHubUrl": "https://github.com/andiosteam-dev/AND_world_holidays",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays"
+  },
+  {
     "iconSrc": "./assets/apps/superhero.webp",
     "title": "SuperHero Finder",
     "time": "",
@@ -44,25 +55,14 @@
     "playStoreUrl": ""
   },
   {
-    "iconSrc": "./assets/apps/world_holidays.webp",
-    "title": "World Holidays",
+    "iconSrc": "./assets/apps/noticas.webp",
+    "title": "Noticas",
     "time": "",
-    "description": "Application where you will be able to find out all holidays over 110 countries.",
-    "technologies": "Kotlin • Jetpack Compose • API",
-    "url": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays",
+    "description": "A simple Android app built with Jetpack Compose to create, view, edit, and delete notes.",
+    "technologies": "Kotlin • Jetpack Compose • Room",
+    "url": "",
     "webUrl": "",
-    "gitHubUrl": "https://github.com/andiosteam-dev/AND_world_holidays",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.world_holidays"
-  },
-  {
-    "iconSrc": "./assets/apps/ozwaffle.svg",
-    "title": "OzWaffle",
-    "time": "",
-    "description": "Website for a waffle shop located in Melbourne, Australia",
-    "technologies": "ReactJs • JavaScript • Vercel",
-    "url": "https://www.ozwaffle.com.au",
-    "webUrl": "https://www.ozwaffle.com.au",
-    "gitHubUrl": "",
+    "gitHubUrl": "https://github.com/jimmyale3102/Noticas",
     "playStoreUrl": ""
   },
   {
@@ -77,6 +77,17 @@
     "playStoreUrl": ""
   },
   {
+    "iconSrc": "./assets/apps/compose_calendar.svg",
+    "title": "Compose Calendar",
+    "time": "",
+    "description": "A Calendar library entirely with Jetpack Compose. Designed to offers a flexible interface for managing calendar events.",
+    "technologies": "Kotlin • Jetpack Compose",
+    "url": "",
+    "webUrl": "",
+    "gitHubUrl": "https://github.com/jimmyale3102/compose-calendar",
+    "playStoreUrl": ""
+  },
+  {
     "iconSrc": "./assets/apps/excuseme.webp",
     "title": "Excuse Me",
     "time": "",
@@ -86,6 +97,39 @@
     "webUrl": "",
     "gitHubUrl": "https://github.com/jimmyale3102/excuse-me",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.alejo.excuseme"
+  },
+  {
+    "iconSrc": "./assets/apps/Favorite_places.svg",
+    "title": "Favorite Places",
+    "time": "",
+    "description": "An interactive map app that lets users tap to add, name, and mark favorite locations, with a list view of saved places",
+    "technologies": "iOS • SwiftUI",
+    "url": "",
+    "webUrl": "",
+    "gitHubUrl": " https://github.com/jimmyale3102/iOS-favorite-places",
+    "playStoreUrl": ""
+  },
+  {
+    "iconSrc": "./assets/apps/ozwaffle.svg",
+    "title": "OzWaffle",
+    "time": "",
+    "description": "Website for a waffle shop located in Melbourne, Australia",
+    "technologies": "ReactJs • JavaScript • Vercel",
+    "url": "https://www.ozwaffle.com.au",
+    "webUrl": "https://www.ozwaffle.com.au",
+    "gitHubUrl": "",
+    "playStoreUrl": ""
+  },
+  {
+    "iconSrc": "./assets/apps/shopneutral.webp",
+    "title": "Shop Neutral",
+    "time": "",
+    "description": "Website for a Clean Green Living in Melbourne, Australia",
+    "technologies": "Shopify",
+    "url": "https://shopneutral.com.au/",
+    "webUrl": "https://shopneutral.com.au/",
+    "gitHubUrl": "",
+    "playStoreUrl": ""
   },
   {
     "iconSrc": "./assets/apps/boyaca_dev.svg",

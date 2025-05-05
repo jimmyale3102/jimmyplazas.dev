@@ -8,6 +8,7 @@ import { MarginDefault, MarginToolBar } from '../../ThemeContext.js';
 import Skills from '../../sections/home/Skills.js';
 import MyVideos from '../../sections/home/MyVideos.js';
 
+
 function Home() {
   const yearsOfExperience = 3
   const projectsWorkedOn = 5
@@ -26,7 +27,7 @@ function Home() {
       <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <Experience />
       <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
-      <MyVideos />
+      <MyVideos /> 
     </Container>
   );
 }
