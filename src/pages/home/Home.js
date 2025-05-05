@@ -20,13 +20,9 @@ function Home() {
         yearsOfExperience={yearsOfExperience}
         projectsWorkedOn={projectsWorkedOn}
       />
-      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <Projects />
-      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <Skills />
-      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <Experience />
-      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <MyVideos /> 
     </Container>
   );
