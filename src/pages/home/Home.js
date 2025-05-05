@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Divider } from '@mui/material';
+import { Container } from '@mui/material';
 import Intro from '../../sections/home/Intro.js';
 import Statistics from '../../sections/home/Statistics.js';
-import Projects from '../../sections/home/Projects.js';
+import ProjectsList from '../../sections/home/Projects.js';
 import Experience from '../../sections/home/Experience.js'
 import { MarginDefault, MarginToolBar } from '../../ThemeContext.js';
 import Skills from '../../sections/home/Skills.js';
@@ -19,13 +19,9 @@ function Home() {
         yearsOfExperience={yearsOfExperience}
         projectsWorkedOn={projectsWorkedOn}
       />
-      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
-      <Projects />
-      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
+      <ProjectsList showAllProjects={false} />
       <Skills />
-      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <Experience />
-      <Divider style={{ marginTop: MarginDefault, marginBottom: MarginDefault }} />
       <MyVideos />
     </Container>
   );

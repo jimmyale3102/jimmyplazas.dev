@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme, Avatar, CardActionArea, Card, CardContent, Typography, Grid } from '@mui/material';
-import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight, LightHighlightColor, DarkHighlightColor, onLightTextColor, onDarkTextColor } from '../../ThemeContext';
+import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight, onLightTextColor, onDarkTextColor, MarginXSmall } from '../../ThemeContext';
 import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
 import { ReactComponent as PlayStoreIcon } from '../../assets/play_store.svg';
 import WebIcon from '@mui/icons-material/Web';
@@ -12,9 +12,9 @@ function ProjectItem({ iconSrc, title, time, description, technologies, url, web
   const cardBackgroundColor = theme.palette.mode === 'light' ? BackgroundColorLight : BackgroundColorDark;
 
   return (
-    <Card style={{ backgroundColor: cardBackgroundColor, boxShadow: 'none', borderRadius: BorderRadiusCard, marginBottom: "16px" }}>
+    <Card style={{ backgroundColor: cardBackgroundColor, boxShadow: 'none', borderRadius: BorderRadiusCard, marginBottom: MarginXSmall }}>
       <CardActionArea href={url} target='_blank' style={{ backgroundColor: cardBackgroundColor }}>
-        <CardContent>
+        <CardContent style={{ padding: 12 }}>
           <Grid alignItems={'top'} style={{ display: 'flex' }}>
 
             <Grid item marginRight={2}
@@ -28,23 +28,23 @@ function ProjectItem({ iconSrc, title, time, description, technologies, url, web
                 style={{
                   width: '100%',
                   height: '100%',
-                  maxHeight: '56px',
-                  maxWidth: '56px',
-                  marginTop: '2px',
+                  maxHeight: '48px',
+                  maxWidth: '48px',
+                  marginTop: '4px',
                   borderRadius: BorderRadiusMedium
                 }}
               />
             </Grid>
 
             <Grid item style={{ flex: 1 }}>
-              <Grid container direction={'row'} display={{display: '-ms-inline-flexbox'}}>
-                <Grid item style={{display: 'flex'}}>
-                  <Typography variant="body1" fontWeight={'bold'}>
+              <Grid container direction={'row'} display={{ display: '-ms-inline-flexbox' }}>
+                <Grid item style={{ display: 'flex' }}>
+                  <Typography variant="body2" fontWeight={'bold'}>
                     {title}
                   </Typography>
                 </Grid>
-                <Grid item style={{flex: 1}}>
-                  <Typography variant="body2" color="text.secondary" style={{textAlign: 'end'}}>
+                <Grid item style={{ flex: 1 }}>
+                  <Typography variant="body2" color="text.secondary" style={{ textAlign: 'end' }}>
                     {time}
                   </Typography>
                 </Grid>

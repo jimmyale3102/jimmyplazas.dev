@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, Box } from '@mui/material';
-import { useThemeContext, MarginDefault, onLightTextColor, onDarkTextColor } from '../../ThemeContext';
+import { Typography, Box, Button } from '@mui/material';
+import { useThemeContext, MarginDefault, onLightTextColor, onDarkTextColor, MarginXBig, BorderRadiusMedium } from '../../ThemeContext';
 import ProjectItem from '../../components/home/ProjectItem';
+import { ArrowForward } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
-function Projects() {
+function ProjectsList({ showAllProjects = true }) {
+  const navigate = useNavigate()
   const [projectsData, setProjects] = useState([]);
   const { mode } = useThemeContext();
+  const projectsToShow = showAllProjects ? projectsData : projectsData.filter(project => project.showInHome);
 
   useEffect(() => {
     fetch('./content/projects.json')
@@ -15,7 +19,7 @@ function Projects() {
   }, []);
 
   return (
-    <Box >
+    <Box style={{ marginTop: MarginXBig }}>
       <Typography
         variant="h4"
         fontWeight={'bold'}
@@ -23,7 +27,7 @@ function Projects() {
         <span style={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor }} >Projects</span>
       </Typography>
 
-      {projectsData.map((projectItem, index) => (
+      {projectsToShow.map((projectItem, index) => (
         <ProjectItem
           key={index}
           iconSrc={projectItem.iconSrc}
@@ -37,8 +41,28 @@ function Projects() {
         />
       ))}
 
+      {!showAllProjects && (
+        <div style={{ display: 'flex', justifyContent: 'end' }}>
+          <Button
+            onClick={() => navigate('./projects')}
+            variant="contained"
+            startIcon={<ArrowForward />}
+            style={{ borderRadius: BorderRadiusMedium }}
+          >
+            <Typography
+              style={{ textTransform: 'none' }}
+              variant={"subtitle1"}
+              alignSelf={'flex-start'}
+              fontWeight={"bold"}
+            >
+              View all
+            </Typography>
+          </Button>
+        </div>
+      )}
+
     </Box>
   );
 }
 
-export default Projects;
+export default ProjectsList;

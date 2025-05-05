@@ -4,7 +4,7 @@ import { useThemeContext, BorderRadiusCard, MarginDefault, onDarkTextColor, onLi
 import CountUp from 'react-countup';
 
 function Statistics() {
-  const { mode, toggleTheme } = useThemeContext();
+  const { mode } = useThemeContext();
   const yearsOfExperience = 4;
   const projectsWorkedOn = 10;
   const contributions = 11032;

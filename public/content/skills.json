@@ -24,22 +24,40 @@
     "icon": "./assets/skills/material_design.webp"
   },
   {
+    "name": "KMP",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/kmp.webp"
+  },
+  {
     "name": "Firebase",
     "level": "Medium",
     "color": "#ffffff",
     "icon": "./assets/skills/firebase.svg"
   },
   {
-    "name": "Java",
+    "name": "Koin",
     "level": "Medium",
     "color": "#ffffff",
-    "icon": "./assets/skills/java.svg"
+    "icon": "./assets/skills/ic_koin.webp"
+  },
+  {
+    "name": "GraphQL",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/GraphQL.webp"
   },
   {
     "name": "Git",
     "level": "Medium",
     "color": "#ffffff",
     "icon": "./assets/skills/git.svg"
+  },
+  {
+    "name": "Java",
+    "level": "Medium",
+    "color": "#ffffff",
+    "icon": "./assets/skills/java.svg"
   },
   {
     "name": "Swift",
