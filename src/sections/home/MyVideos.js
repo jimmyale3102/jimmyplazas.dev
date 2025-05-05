@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, Box } from '@mui/material';
+import { Typography, Box, Button } from '@mui/material';
 import { useThemeContext, MarginDefault, onDarkTextColor, onLightTextColor, BorderRadiusMedium, MarginXBig } from '../../ThemeContext';
 import IconButtonComponent from '../../components/common/IconButtonComponent';
-import { YouTube } from '@mui/icons-material';
+import { ArrowForward, YouTube } from '@mui/icons-material';
 import Slider from "react-slick";
 import VideoItem from '../../components/home/VideoItem';
 import "slick-carousel/slick/slick.css";
@@ -81,15 +81,22 @@ function MyVideos() {
         />
       ))}
       <div style={{ display: 'flex', justifyContent: 'end' }}>
-        <IconButtonComponent
-              text="Watch all"
-              href={youtubeUrl}
-              IconComponent={YouTube}
-              variant="h6"
-              fontWeight='bold'
-              fontStyle={{ color: mode === 'light' ? onLightTextColor : onDarkTextColor }}
-            />
-      </div>
+          <Button
+            onClick={() => window.open(youtubeUrl, '_blank')}
+            variant="contained"
+            startIcon={<ArrowForward />}
+            style={{ borderRadius: BorderRadiusMedium }}
+          >
+            <Typography
+              style={{ textTransform: 'none' }}
+              variant={"subtitle1"}
+              alignSelf={'flex-start'}
+              fontWeight={"bold"}
+            >
+              Watch all
+            </Typography>
+          </Button>
+        </div>
 
     </Box>
   );
