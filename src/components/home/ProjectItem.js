@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme, Avatar, CardActionArea, Card, CardContent, Typography, Grid } from '@mui/material';
-import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight, onLightTextColor, onDarkTextColor, MarginXSmall, MarginDefault } from '../../ThemeContext';
+import { useThemeContext, BorderRadiusMedium, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight, onLightTextColor, onDarkTextColor, MarginXSmall } from '../../ThemeContext';
 import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
 import { ReactComponent as PlayStoreIcon } from '../../assets/play_store.svg';
 import WebIcon from '@mui/icons-material/Web';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Divider } from '@mui/material';
+import { Container } from '@mui/material';
 import { MarginDefault, MarginToolBar } from '../../ThemeContext.js';
 import ProjectsList from '../../sections/home/Projects.js';
 

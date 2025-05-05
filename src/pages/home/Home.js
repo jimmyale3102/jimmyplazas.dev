@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Divider } from '@mui/material';
+import { Container } from '@mui/material';
 import Intro from '../../sections/home/Intro.js';
 import Statistics from '../../sections/home/Statistics.js';
 import ProjectsList from '../../sections/home/Projects.js';

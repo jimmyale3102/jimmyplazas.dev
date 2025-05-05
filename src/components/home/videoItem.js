@@ -1,11 +1,10 @@
 import React from 'react';
 import { useTheme, CardActionArea, Card, CardContent, Typography, Grid } from '@mui/material';
-import { useThemeContext, BorderRadiusCard, BackgroundColorDark, BackgroundColorLight } from '../../ThemeContext';
+import { BorderRadiusCard, BackgroundColorDark, BackgroundColorLight } from '../../ThemeContext';
 import { YouTube } from '@mui/icons-material';
 import IconButtonComponent from '../common/IconButtonComponent';
 
 function VideoItem({ videoId, title, description, videoAlt, url }) {
-  const { mode } = useThemeContext();
   const theme = useTheme();
   const cardBackgroundColor = theme.palette.mode === 'light' ? BackgroundColorLight : BackgroundColorDark;
 
