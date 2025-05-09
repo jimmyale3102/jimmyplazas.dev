@@ -62,11 +62,12 @@ function Header() {
           <Button
             onClick={() => navigate("./")}
             sx={{ textTransform: 'none', color: 'inherit', padding: 0 }}
+            style={{ paddingLeft: 8, paddingRight: 8, paddingTop: 4, paddingBottom: 4 }}
           >
             <Avatar
                 alt="logo"
                 src='./assets/web/favicon-light.png'
-                style={{ width: 24, height: 24 }}
+                style={{ width: 24, height: 24, marginRight: 8 }}
               />
             <Typography variant="subtitle1" fontWeight="bold">
               Jimmy Plazas
