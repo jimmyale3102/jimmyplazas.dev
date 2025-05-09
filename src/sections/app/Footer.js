@@ -26,9 +26,9 @@ function Footer() {
         <Box>
           <IconButtonComponent href='https://github.com/jimmyplazas' IconComponent={GitHubIcon} />
           <IconButtonComponent href='https://www.linkedin.com/in/jimmyplazas/' IconComponent={LinkedInIcon} />
-          <IconButtonComponent href='https://twitter.com/jimmy_plazas' IconComponent={XIcon} />
+          <IconButtonComponent href='https://x.com/jimmy_plazas_' IconComponent={XIcon} />
           <IconButtonComponent href='https://www.instagram.com/aleejo_loopez/' IconComponent={InstagramIcon} />
-          <IconButtonComponent href='https://www.youtube.com/@jimmy_code/videos' IconComponent={YouTubeIcon} />
+          <IconButtonComponent href='https://www.youtube.com/@jimmy_coding' IconComponent={YouTubeIcon} />
           <IconButtonComponent href='mailto:hi@jimmyplazas.dev' IconComponent={Email} />
         </Box>
         <Typography
