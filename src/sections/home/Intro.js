@@ -20,7 +20,7 @@ function Intro() {
             <Stack direction={'column'} spacing={2}>
               <Avatar
                 alt="Profile Picture"
-                src='./assets/jimmy/jimmy.jpg'
+                src='./assets/jimmy/jimmy.jpeg'
                 style={{ width: 160, height: 160 }}
               />
               <Stack direction={'column'} spacing={0.5}>

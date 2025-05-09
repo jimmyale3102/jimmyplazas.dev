@@ -12,7 +12,8 @@ import {
   ListItemIcon,
   ListItemText,
   useMediaQuery,
-  useTheme
+  useTheme,
+  Avatar
 } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import WifiIcon from '@mui/icons-material/Wifi';
@@ -60,9 +61,13 @@ function Header() {
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <Button
             onClick={() => navigate("./")}
-            startIcon={<PersonIcon />}
             sx={{ textTransform: 'none', color: 'inherit', padding: 0 }}
           >
+            <Avatar
+                alt="logo"
+                src='./assets/web/favicon-light.png'
+                style={{ width: 24, height: 24 }}
+              />
             <Typography variant="subtitle1" fontWeight="bold">
               Jimmy Plazas
             </Typography>
